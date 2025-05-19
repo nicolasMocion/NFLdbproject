@@ -1,0 +1,5687 @@
+{
+  "Version": 1,
+  "Hash": "LQIEITnb+az2CqUmmK9eirXpcPB4GOzFF/6xBeXE10g=",
+  "Source": "EspnBackend",
+  "BasePath": "_content/EspnBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EspnBackend/wwwroot",
+      "Source": "EspnBackend",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coaches.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/coaches#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6wnu51awco",
+      "Integrity": "dj2bqDbsB7RoHJlUKJ4Jw/V6ez4tmVexqJLKsQFwLCc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/coaches.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coachHistory.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/coachHistory#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n46n758mix",
+      "Integrity": "OeZujHGSM0vKGRS6D35zZbahxGDPlmmdBitLLP/aKm0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/coachHistory.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/bootstrap.min.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c2ff122s14",
+      "Integrity": "/PwnlAXF2ty26uL00/RkWNPA3HrNHOeR5HUdHJbHN10=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/css/bootstrap.min.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/style.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "twt3eamdpi",
+      "Integrity": "LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/css/style.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/games.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/games#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nwrvxm9qno",
+      "Integrity": "+Xdg+zT98njb1jRpaZvndb7m51fE79Nh16AALPhc6Sg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/games.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-1.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/about-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gvgxmzcaex",
+      "Integrity": "VKrqHE+Rj1fvlRvyUTSY/ewvfMhOryY48n41i96teWk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/about-1.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-2.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/about-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "59015wjal5",
+      "Integrity": "d/PUGZ3PCOut3fXywBdOzct8ksz4wYylTo4vp5h0xAs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/about-2.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/blue.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/blue#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7d4xabf1oq",
+      "Integrity": "peXCLCZ9UXCJi7PJ7txXdi4XFpZQ8J76e59atlcDeNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/blue.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-1.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/carousel-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vhxx2gwjh7",
+      "Integrity": "02kDR2BBdvMuTFs9r+8aCnDqqgw3Ckmjkf1HG8rHzeg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/carousel-1.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-2.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/carousel-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "av6ma5e8es",
+      "Integrity": "Rir4cVbQ9Q0168qvPyylmVwBzouW3wcwXPMLwxjNo14=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/carousel-2.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-1.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/product-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "06g4hbxr12",
+      "Integrity": "KEh5BIU4NKz7u3Ysw5k6cNe6Ye7fNZ520zSFYbTSZic=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/product-1.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-2.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/product-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "seww5k2h8c",
+      "Integrity": "FME0UXrwcL5fQ5gmw+1p2N5SQ8LaXuY0zZcBFtt/Tmc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/product-2.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-3.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/product-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "toxpf8ypa6",
+      "Integrity": "zWWu7pWm0CoYbd2WfqI+6hYdr0hsCBtE7jDzNRUcV/U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/product-3.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/purple.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/purple#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw7pp4a8i5",
+      "Integrity": "St1rADnbyNwmfj/XKLKLpl2xEtYE6wJrvyspH2FUHOI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/purple.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-1.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/service-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sr25xpwe4l",
+      "Integrity": "SOLMPhpGl8kbJAR4JuXJR71o6lxunuZ13AWC+NZi2n8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/service-1.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-2.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/service-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dlsyn0qz3g",
+      "Integrity": "v2Pc9wurFa7tVoKp5N/zSUtMv2zI7d5w9Vyks43Pmwo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/service-2.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-1.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/team-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8x9t2l5phd",
+      "Integrity": "hOIzslR4a5m4kdbLiWAmXItAZFbxAUcG58TgT7NgK/s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/team-1.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-2.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/team-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "74r39sqf7b",
+      "Integrity": "+VosOat7FSDdK9JlEFquPVquVD4a0mnnWmi/Atcu0jY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/team-2.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-3.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/team-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vj94y0kght",
+      "Integrity": "W6twCtG9/hpPT1dBLpuD0AAirSUdWL5hgeSrdL5XDUU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/team-3.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-4.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/team-4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9biw16cisd",
+      "Integrity": "SyLKOfkQNJHmVEn3BiypGvElucH0sRNe4+DLxhFoyo8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/team-4.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-1.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/testimonial-1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "urxekhjru9",
+      "Integrity": "hvV+g3036s38E7lbHarlNY5qA65G4stWHW0cP5kN9Gw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/testimonial-1.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-2.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/testimonial-2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "idthmlef6x",
+      "Integrity": "CmctN7WtH+GxDEoUbJIshIzNDytqm3fAHX9SeFflVh0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/testimonial-2.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-3.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/testimonial-3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d2587veb1l",
+      "Integrity": "W1EYirz8mmXhF3xFaZcUTT/Qh5S8+YQDiYPnXvS7s7c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/testimonial-3.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-4.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/testimonial-4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ghptn7a2o",
+      "Integrity": "cPL3g03PQXngwcP30gawmezVnaTWbQIiLPoNmKpQcuc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/testimonial-4.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/torta1.jpeg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/torta1#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mglr136jhw",
+      "Integrity": "ZlKnJ/1EY2VrT/Amu+4IdYZmd6np4gUR3nPf/xn5qgA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/torta1.jpeg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/tortaR.jpeg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/tortaR#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mjdwv3mja7",
+      "Integrity": "kpcxXcEJGhky1Iii8WF1QDvbXijSgi2zmkN412rd/qE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/tortaR.jpeg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wine.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/wine#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zi1zag816t",
+      "Integrity": "hcN7LFALsbvAJRJYGU49jlMwqxO9GvMECJvxQJPk5C8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/wine.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wineJumbo.jpg",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/img/wineJumbo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0et1c08y7t",
+      "Integrity": "+CgDFPGNDYDB1qhx4uBbmQidNzFUJB4dfRraWYhQQC4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/img/wineJumbo.jpg"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/index.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4kzyc8xpc8",
+      "Integrity": "hOQifD3WxpJtRrUbiBWtZ6pRVFXH8u7MqlldhS33LfY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/index.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/js/main.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/js/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q12pkop05p",
+      "Integrity": "nlrj+SD/7MgZQmGlUWf8rBzm4E9NN8jg2ZnXrXoX6Uc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/js/main.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/animate/animate#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kryym8p5f5",
+      "Integrity": "gKpUl/8xssABR02UMvCFPBHSAKZ+pPmFKrL37i/t2cI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/animate/animate.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.min.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/animate/animate.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rrupqaswi7",
+      "Integrity": "B+qiRdVVXVxK6KWOMidjlTtbdVmyklXpmi56Vd+ma4c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/animate/animate.min.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/counterup/counterup.min.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/counterup/counterup.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r1hye14rqe",
+      "Integrity": "z/xYR8yWHm047eCUf54OllDJJSFmA2BGhkfVmUSnVjg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/counterup/counterup.min.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/easing/easing#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4cpzj38bla",
+      "Integrity": "/HWND9eB1wfx6H806WNb0svB4wOEHlfFF0gEVto2bns=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/easing/easing.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.min.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/easing/easing.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "irrmrafh02",
+      "Integrity": "DsmK31k+vMAb7GCx9JTazUdSKr/vkDinFBAdg/ReFl0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/easing/easing.min.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/ajax-loader.gif",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/ajax-loader#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uwe6z5aqkv",
+      "Integrity": "Ahj8xYnkAzmvsPtsQtJZgNm9ykZg+lHxIrRmY+pZ2Ug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/ajax-loader.gif"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/owl.carousel#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fynx4m6ffa",
+      "Integrity": "h7NPLBxMMPcEeO/BDGwCb5MRAZ8CgVcxRxfm3fpMH0s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/owl.carousel.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j3wy3vomxf",
+      "Integrity": "AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/owl.theme.default#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3sqe7mmf4b",
+      "Integrity": "7eFGZ5XrQEKmIngaS18OjhKpMle23F3q596q9NKzOl4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/owl.theme.default.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bvb3mcnxs0",
+      "Integrity": "KWs9jp+jZzOZmmnW5jC8Y2HqI9rajJig5I00un99DtI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/owl.theme.green#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rstaz3qrjg",
+      "Integrity": "WwSUl+m10JZDJRSqyYAdp4i7Q+xHzUU63IQRx6ZuG5U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/owl.theme.green.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1ktijcimzc",
+      "Integrity": "31YwmAV/78ytUf3h39V8ucjb5m8PXlJBCPlPqjgdMCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.video.play.png",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/assets/owl.video.play#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s8sku8kfko",
+      "Integrity": "BDYEVob93xDMu+JWjgy/+0V+fefUPREVwAVugelxSf8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/assets/owl.video.play.png"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/LICENSE",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x0d6diem58",
+      "Integrity": "j2NdanE/1fPIlaS8ByYIJIservW2YwW7XoxRK6D56w8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/LICENSE"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/owl.carousel#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8vqiqdzfsy",
+      "Integrity": "hPYqnq606IVznFwz1LW0eYgPSxG9O/wyIZT9gK9NvWQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.min.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/owlcarousel/owl.carousel.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xre24ck5s9",
+      "Integrity": "s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.min.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/links.php",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/waypoints/links#[.{fingerprint}]?.php",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s65facuhh6",
+      "Integrity": "/B0WGFVk+67I8B6rSY+WPQ+knhNbPz76gt6aXH8WPOU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/waypoints/links.php"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/waypoints.min.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/waypoints/waypoints.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uydiqv09h2",
+      "Integrity": "No2qtnsaWysoAu27rHmiqkupkqLr+cZ7mK14TYAEAYw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/waypoints/waypoints.min.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/wow/wow#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6dwowm74tu",
+      "Integrity": "2mEX0KBL4ylqzblacDJEs0pmz9odZ9nvOQ11TbD0XpY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/wow/wow.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.min.js",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/lib/wow/wow.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g8mioufvz9",
+      "Integrity": "EEFWiimQk+8Wj9ePi1TCfRzwzfro6HDeB2m6EXTGvAU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/lib/wow/wow.min.js"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/playerHistory.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/playerHistory#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "slmtwss9qx",
+      "Integrity": "UNh43HrrnYyoqEc3u0a/o6TOZcSupd29TvYQMlNWO+c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/playerHistory.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/players.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/players#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nay5k2xwcq",
+      "Integrity": "3yj32XVgK18fgSwOSZ/ksfeRtMjGfBislMALBeD3LJg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/players.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/stats.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/stats#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oms5hhxj67",
+      "Integrity": "0HqBjBZCn5jC8WznzzbRwQ8BmT0670G8QSJbnbv7TLM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/stats.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teams.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/teams#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h6n3byqxoy",
+      "Integrity": "59RrCCI+Irza1MXKD5voqprL+M17wcUHQ15kF71DlIw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/teams.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teamTitles.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/teamTitles#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fawkw6101n",
+      "Integrity": "iReBeyikVDOoH4xq7WF0qbZypsQkXm+kf5JRkjnfujM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/teamTitles.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Frontend/public/coaches.6wnu51awco.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coaches.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dj2bqDbsB7RoHJlUKJ4Jw/V6ez4tmVexqJLKsQFwLCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 06:35:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6wnu51awco"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/coaches.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dj2bqDbsB7RoHJlUKJ4Jw/V6ez4tmVexqJLKsQFwLCc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/coaches.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coaches.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dj2bqDbsB7RoHJlUKJ4Jw/V6ez4tmVexqJLKsQFwLCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 06:35:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dj2bqDbsB7RoHJlUKJ4Jw/V6ez4tmVexqJLKsQFwLCc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/coachHistory.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coachHistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8671"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OeZujHGSM0vKGRS6D35zZbahxGDPlmmdBitLLP/aKm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 07:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OeZujHGSM0vKGRS6D35zZbahxGDPlmmdBitLLP/aKm0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/coachHistory.n46n758mix.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coachHistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8671"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OeZujHGSM0vKGRS6D35zZbahxGDPlmmdBitLLP/aKm0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 07:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n46n758mix"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/coachHistory.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OeZujHGSM0vKGRS6D35zZbahxGDPlmmdBitLLP/aKm0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/css/bootstrap.min.c2ff122s14.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164110"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/PwnlAXF2ty26uL00/RkWNPA3HrNHOeR5HUdHJbHN10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c2ff122s14"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/css/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/PwnlAXF2ty26uL00/RkWNPA3HrNHOeR5HUdHJbHN10="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/css/bootstrap.min.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164110"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/PwnlAXF2ty26uL00/RkWNPA3HrNHOeR5HUdHJbHN10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/PwnlAXF2ty26uL00/RkWNPA3HrNHOeR5HUdHJbHN10="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/css/style.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:43:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/css/style.twt3eamdpi.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:43:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "twt3eamdpi"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/games.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/games.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+Xdg+zT98njb1jRpaZvndb7m51fE79Nh16AALPhc6Sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 06:12:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+Xdg+zT98njb1jRpaZvndb7m51fE79Nh16AALPhc6Sg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/games.nwrvxm9qno.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/games.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+Xdg+zT98njb1jRpaZvndb7m51fE79Nh16AALPhc6Sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 06:12:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nwrvxm9qno"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/games.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+Xdg+zT98njb1jRpaZvndb7m51fE79Nh16AALPhc6Sg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/about-1.gvgxmzcaex.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VKrqHE+Rj1fvlRvyUTSY/ewvfMhOryY48n41i96teWk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gvgxmzcaex"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/about-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VKrqHE+Rj1fvlRvyUTSY/ewvfMhOryY48n41i96teWk="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/about-1.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VKrqHE+Rj1fvlRvyUTSY/ewvfMhOryY48n41i96teWk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VKrqHE+Rj1fvlRvyUTSY/ewvfMhOryY48n41i96teWk="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/about-2.59015wjal5.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d/PUGZ3PCOut3fXywBdOzct8ksz4wYylTo4vp5h0xAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "59015wjal5"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/about-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d/PUGZ3PCOut3fXywBdOzct8ksz4wYylTo4vp5h0xAs="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/about-2.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23716"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d/PUGZ3PCOut3fXywBdOzct8ksz4wYylTo4vp5h0xAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d/PUGZ3PCOut3fXywBdOzct8ksz4wYylTo4vp5h0xAs="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/blue.7d4xabf1oq.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/blue.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157803"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peXCLCZ9UXCJi7PJ7txXdi4XFpZQ8J76e59atlcDeNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7d4xabf1oq"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/blue.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-peXCLCZ9UXCJi7PJ7txXdi4XFpZQ8J76e59atlcDeNw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/blue.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/blue.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "157803"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"peXCLCZ9UXCJi7PJ7txXdi4XFpZQ8J76e59atlcDeNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-peXCLCZ9UXCJi7PJ7txXdi4XFpZQ8J76e59atlcDeNw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/carousel-1.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199243"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"02kDR2BBdvMuTFs9r+8aCnDqqgw3Ckmjkf1HG8rHzeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-02kDR2BBdvMuTFs9r+8aCnDqqgw3Ckmjkf1HG8rHzeg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/carousel-1.vhxx2gwjh7.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "199243"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"02kDR2BBdvMuTFs9r+8aCnDqqgw3Ckmjkf1HG8rHzeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vhxx2gwjh7"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/carousel-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-02kDR2BBdvMuTFs9r+8aCnDqqgw3Ckmjkf1HG8rHzeg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/carousel-2.av6ma5e8es.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118941"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rir4cVbQ9Q0168qvPyylmVwBzouW3wcwXPMLwxjNo14=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "av6ma5e8es"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/carousel-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rir4cVbQ9Q0168qvPyylmVwBzouW3wcwXPMLwxjNo14="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/carousel-2.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118941"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rir4cVbQ9Q0168qvPyylmVwBzouW3wcwXPMLwxjNo14=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rir4cVbQ9Q0168qvPyylmVwBzouW3wcwXPMLwxjNo14="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/product-1.06g4hbxr12.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KEh5BIU4NKz7u3Ysw5k6cNe6Ye7fNZ520zSFYbTSZic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06g4hbxr12"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/product-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KEh5BIU4NKz7u3Ysw5k6cNe6Ye7fNZ520zSFYbTSZic="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/product-1.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KEh5BIU4NKz7u3Ysw5k6cNe6Ye7fNZ520zSFYbTSZic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KEh5BIU4NKz7u3Ysw5k6cNe6Ye7fNZ520zSFYbTSZic="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/product-2.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FME0UXrwcL5fQ5gmw+1p2N5SQ8LaXuY0zZcBFtt/Tmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FME0UXrwcL5fQ5gmw+1p2N5SQ8LaXuY0zZcBFtt/Tmc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/product-2.seww5k2h8c.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FME0UXrwcL5fQ5gmw+1p2N5SQ8LaXuY0zZcBFtt/Tmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "seww5k2h8c"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/product-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FME0UXrwcL5fQ5gmw+1p2N5SQ8LaXuY0zZcBFtt/Tmc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/product-3.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zWWu7pWm0CoYbd2WfqI+6hYdr0hsCBtE7jDzNRUcV/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zWWu7pWm0CoYbd2WfqI+6hYdr0hsCBtE7jDzNRUcV/U="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/product-3.toxpf8ypa6.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32176"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zWWu7pWm0CoYbd2WfqI+6hYdr0hsCBtE7jDzNRUcV/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "toxpf8ypa6"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/product-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zWWu7pWm0CoYbd2WfqI+6hYdr0hsCBtE7jDzNRUcV/U="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/purple.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/purple.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"St1rADnbyNwmfj/XKLKLpl2xEtYE6wJrvyspH2FUHOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-St1rADnbyNwmfj/XKLKLpl2xEtYE6wJrvyspH2FUHOI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/purple.qw7pp4a8i5.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/purple.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"St1rADnbyNwmfj/XKLKLpl2xEtYE6wJrvyspH2FUHOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw7pp4a8i5"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/purple.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-St1rADnbyNwmfj/XKLKLpl2xEtYE6wJrvyspH2FUHOI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/service-1.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33462"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SOLMPhpGl8kbJAR4JuXJR71o6lxunuZ13AWC+NZi2n8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SOLMPhpGl8kbJAR4JuXJR71o6lxunuZ13AWC+NZi2n8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/service-1.sr25xpwe4l.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33462"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SOLMPhpGl8kbJAR4JuXJR71o6lxunuZ13AWC+NZi2n8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sr25xpwe4l"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/service-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SOLMPhpGl8kbJAR4JuXJR71o6lxunuZ13AWC+NZi2n8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/service-2.dlsyn0qz3g.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31793"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v2Pc9wurFa7tVoKp5N/zSUtMv2zI7d5w9Vyks43Pmwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dlsyn0qz3g"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/service-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v2Pc9wurFa7tVoKp5N/zSUtMv2zI7d5w9Vyks43Pmwo="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/service-2.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31793"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v2Pc9wurFa7tVoKp5N/zSUtMv2zI7d5w9Vyks43Pmwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v2Pc9wurFa7tVoKp5N/zSUtMv2zI7d5w9Vyks43Pmwo="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-1.8x9t2l5phd.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hOIzslR4a5m4kdbLiWAmXItAZFbxAUcG58TgT7NgK/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8x9t2l5phd"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/team-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOIzslR4a5m4kdbLiWAmXItAZFbxAUcG58TgT7NgK/s="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-1.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28425"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hOIzslR4a5m4kdbLiWAmXItAZFbxAUcG58TgT7NgK/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOIzslR4a5m4kdbLiWAmXItAZFbxAUcG58TgT7NgK/s="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-2.74r39sqf7b.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+VosOat7FSDdK9JlEFquPVquVD4a0mnnWmi/Atcu0jY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "74r39sqf7b"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/team-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+VosOat7FSDdK9JlEFquPVquVD4a0mnnWmi/Atcu0jY="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-2.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+VosOat7FSDdK9JlEFquPVquVD4a0mnnWmi/Atcu0jY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+VosOat7FSDdK9JlEFquPVquVD4a0mnnWmi/Atcu0jY="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-3.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W6twCtG9/hpPT1dBLpuD0AAirSUdWL5hgeSrdL5XDUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W6twCtG9/hpPT1dBLpuD0AAirSUdWL5hgeSrdL5XDUU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-3.vj94y0kght.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27185"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W6twCtG9/hpPT1dBLpuD0AAirSUdWL5hgeSrdL5XDUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vj94y0kght"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/team-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W6twCtG9/hpPT1dBLpuD0AAirSUdWL5hgeSrdL5XDUU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-4.9biw16cisd.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SyLKOfkQNJHmVEn3BiypGvElucH0sRNe4+DLxhFoyo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9biw16cisd"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/team-4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SyLKOfkQNJHmVEn3BiypGvElucH0sRNe4+DLxhFoyo8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/team-4.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SyLKOfkQNJHmVEn3BiypGvElucH0sRNe4+DLxhFoyo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SyLKOfkQNJHmVEn3BiypGvElucH0sRNe4+DLxhFoyo8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-1.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hvV+g3036s38E7lbHarlNY5qA65G4stWHW0cP5kN9Gw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hvV+g3036s38E7lbHarlNY5qA65G4stWHW0cP5kN9Gw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-1.urxekhjru9.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hvV+g3036s38E7lbHarlNY5qA65G4stWHW0cP5kN9Gw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "urxekhjru9"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/testimonial-1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hvV+g3036s38E7lbHarlNY5qA65G4stWHW0cP5kN9Gw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-2.idthmlef6x.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CmctN7WtH+GxDEoUbJIshIzNDytqm3fAHX9SeFflVh0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "idthmlef6x"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/testimonial-2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CmctN7WtH+GxDEoUbJIshIzNDytqm3fAHX9SeFflVh0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-2.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CmctN7WtH+GxDEoUbJIshIzNDytqm3fAHX9SeFflVh0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CmctN7WtH+GxDEoUbJIshIzNDytqm3fAHX9SeFflVh0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-3.d2587veb1l.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W1EYirz8mmXhF3xFaZcUTT/Qh5S8+YQDiYPnXvS7s7c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d2587veb1l"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/testimonial-3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W1EYirz8mmXhF3xFaZcUTT/Qh5S8+YQDiYPnXvS7s7c="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-3.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W1EYirz8mmXhF3xFaZcUTT/Qh5S8+YQDiYPnXvS7s7c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W1EYirz8mmXhF3xFaZcUTT/Qh5S8+YQDiYPnXvS7s7c="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-4.0ghptn7a2o.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cPL3g03PQXngwcP30gawmezVnaTWbQIiLPoNmKpQcuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ghptn7a2o"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/testimonial-4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cPL3g03PQXngwcP30gawmezVnaTWbQIiLPoNmKpQcuc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/testimonial-4.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2785"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cPL3g03PQXngwcP30gawmezVnaTWbQIiLPoNmKpQcuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cPL3g03PQXngwcP30gawmezVnaTWbQIiLPoNmKpQcuc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/torta1.jpeg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/torta1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlKnJ/1EY2VrT/Amu+4IdYZmd6np4gUR3nPf/xn5qgA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlKnJ/1EY2VrT/Amu+4IdYZmd6np4gUR3nPf/xn5qgA="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/torta1.mglr136jhw.jpeg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/torta1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZlKnJ/1EY2VrT/Amu+4IdYZmd6np4gUR3nPf/xn5qgA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mglr136jhw"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/torta1.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZlKnJ/1EY2VrT/Amu+4IdYZmd6np4gUR3nPf/xn5qgA="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/tortaR.jpeg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/tortaR.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kpcxXcEJGhky1Iii8WF1QDvbXijSgi2zmkN412rd/qE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kpcxXcEJGhky1Iii8WF1QDvbXijSgi2zmkN412rd/qE="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/tortaR.mjdwv3mja7.jpeg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/tortaR.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kpcxXcEJGhky1Iii8WF1QDvbXijSgi2zmkN412rd/qE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mjdwv3mja7"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/tortaR.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kpcxXcEJGhky1Iii8WF1QDvbXijSgi2zmkN412rd/qE="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/wine.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wine.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "279052"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hcN7LFALsbvAJRJYGU49jlMwqxO9GvMECJvxQJPk5C8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hcN7LFALsbvAJRJYGU49jlMwqxO9GvMECJvxQJPk5C8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/wine.zi1zag816t.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wine.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "279052"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hcN7LFALsbvAJRJYGU49jlMwqxO9GvMECJvxQJPk5C8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zi1zag816t"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/wine.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hcN7LFALsbvAJRJYGU49jlMwqxO9GvMECJvxQJPk5C8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/wineJumbo.0et1c08y7t.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wineJumbo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+CgDFPGNDYDB1qhx4uBbmQidNzFUJB4dfRraWYhQQC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0et1c08y7t"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/img/wineJumbo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+CgDFPGNDYDB1qhx4uBbmQidNzFUJB4dfRraWYhQQC4="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/img/wineJumbo.jpg",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wineJumbo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+CgDFPGNDYDB1qhx4uBbmQidNzFUJB4dfRraWYhQQC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+CgDFPGNDYDB1qhx4uBbmQidNzFUJB4dfRraWYhQQC4="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/index.4kzyc8xpc8.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hOQifD3WxpJtRrUbiBWtZ6pRVFXH8u7MqlldhS33LfY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kzyc8xpc8"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOQifD3WxpJtRrUbiBWtZ6pRVFXH8u7MqlldhS33LfY="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/index.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hOQifD3WxpJtRrUbiBWtZ6pRVFXH8u7MqlldhS33LfY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOQifD3WxpJtRrUbiBWtZ6pRVFXH8u7MqlldhS33LfY="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/js/main.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/js/main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nlrj+SD/7MgZQmGlUWf8rBzm4E9NN8jg2ZnXrXoX6Uc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:47:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nlrj+SD/7MgZQmGlUWf8rBzm4E9NN8jg2ZnXrXoX6Uc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/js/main.q12pkop05p.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/js/main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nlrj+SD/7MgZQmGlUWf8rBzm4E9NN8jg2ZnXrXoX6Uc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:47:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q12pkop05p"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nlrj+SD/7MgZQmGlUWf8rBzm4E9NN8jg2ZnXrXoX6Uc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/animate/animate.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gKpUl/8xssABR02UMvCFPBHSAKZ+pPmFKrL37i/t2cI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gKpUl/8xssABR02UMvCFPBHSAKZ+pPmFKrL37i/t2cI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/animate/animate.kryym8p5f5.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gKpUl/8xssABR02UMvCFPBHSAKZ+pPmFKrL37i/t2cI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kryym8p5f5"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/animate/animate.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gKpUl/8xssABR02UMvCFPBHSAKZ+pPmFKrL37i/t2cI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/animate/animate.min.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B+qiRdVVXVxK6KWOMidjlTtbdVmyklXpmi56Vd+ma4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B+qiRdVVXVxK6KWOMidjlTtbdVmyklXpmi56Vd+ma4c="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/animate/animate.min.rrupqaswi7.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16953"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B+qiRdVVXVxK6KWOMidjlTtbdVmyklXpmi56Vd+ma4c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rrupqaswi7"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/animate/animate.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B+qiRdVVXVxK6KWOMidjlTtbdVmyklXpmi56Vd+ma4c="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/counterup/counterup.min.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/counterup/counterup.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z/xYR8yWHm047eCUf54OllDJJSFmA2BGhkfVmUSnVjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z/xYR8yWHm047eCUf54OllDJJSFmA2BGhkfVmUSnVjg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/counterup/counterup.min.r1hye14rqe.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/counterup/counterup.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z/xYR8yWHm047eCUf54OllDJJSFmA2BGhkfVmUSnVjg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r1hye14rqe"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/counterup/counterup.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z/xYR8yWHm047eCUf54OllDJJSFmA2BGhkfVmUSnVjg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/easing/easing.4cpzj38bla.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/HWND9eB1wfx6H806WNb0svB4wOEHlfFF0gEVto2bns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4cpzj38bla"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/easing/easing.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/HWND9eB1wfx6H806WNb0svB4wOEHlfFF0gEVto2bns="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/easing/easing.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4092"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/HWND9eB1wfx6H806WNb0svB4wOEHlfFF0gEVto2bns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/HWND9eB1wfx6H806WNb0svB4wOEHlfFF0gEVto2bns="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/easing/easing.min.irrmrafh02.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DsmK31k+vMAb7GCx9JTazUdSKr/vkDinFBAdg/ReFl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "irrmrafh02"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/easing/easing.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DsmK31k+vMAb7GCx9JTazUdSKr/vkDinFBAdg/ReFl0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/easing/easing.min.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DsmK31k+vMAb7GCx9JTazUdSKr/vkDinFBAdg/ReFl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DsmK31k+vMAb7GCx9JTazUdSKr/vkDinFBAdg/ReFl0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/ajax-loader.gif",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/ajax-loader.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ahj8xYnkAzmvsPtsQtJZgNm9ykZg+lHxIrRmY+pZ2Ug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ahj8xYnkAzmvsPtsQtJZgNm9ykZg+lHxIrRmY+pZ2Ug="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/ajax-loader.uwe6z5aqkv.gif",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/ajax-loader.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ahj8xYnkAzmvsPtsQtJZgNm9ykZg+lHxIrRmY+pZ2Ug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uwe6z5aqkv"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/ajax-loader.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ahj8xYnkAzmvsPtsQtJZgNm9ykZg+lHxIrRmY+pZ2Ug="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.carousel.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h7NPLBxMMPcEeO/BDGwCb5MRAZ8CgVcxRxfm3fpMH0s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h7NPLBxMMPcEeO/BDGwCb5MRAZ8CgVcxRxfm3fpMH0s="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.carousel.fynx4m6ffa.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h7NPLBxMMPcEeO/BDGwCb5MRAZ8CgVcxRxfm3fpMH0s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fynx4m6ffa"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/owl.carousel.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h7NPLBxMMPcEeO/BDGwCb5MRAZ8CgVcxRxfm3fpMH0s="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.carousel.min.j3wy3vomxf.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j3wy3vomxf"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWqwvQ3kg5aA5KcXpX25sYKowsX97sTCTbeo33Yfyk0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.default.3sqe7mmf4b.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7eFGZ5XrQEKmIngaS18OjhKpMle23F3q596q9NKzOl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3sqe7mmf4b"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/owl.theme.default.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7eFGZ5XrQEKmIngaS18OjhKpMle23F3q596q9NKzOl4="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.default.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7eFGZ5XrQEKmIngaS18OjhKpMle23F3q596q9NKzOl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7eFGZ5XrQEKmIngaS18OjhKpMle23F3q596q9NKzOl4="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.bvb3mcnxs0.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KWs9jp+jZzOZmmnW5jC8Y2HqI9rajJig5I00un99DtI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bvb3mcnxs0"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KWs9jp+jZzOZmmnW5jC8Y2HqI9rajJig5I00un99DtI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KWs9jp+jZzOZmmnW5jC8Y2HqI9rajJig5I00un99DtI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KWs9jp+jZzOZmmnW5jC8Y2HqI9rajJig5I00un99DtI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.green.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WwSUl+m10JZDJRSqyYAdp4i7Q+xHzUU63IQRx6ZuG5U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WwSUl+m10JZDJRSqyYAdp4i7Q+xHzUU63IQRx6ZuG5U="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.1ktijcimzc.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"31YwmAV/78ytUf3h39V8ucjb5m8PXlJBCPlPqjgdMCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1ktijcimzc"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-31YwmAV/78ytUf3h39V8ucjb5m8PXlJBCPlPqjgdMCM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"31YwmAV/78ytUf3h39V8ucjb5m8PXlJBCPlPqjgdMCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-31YwmAV/78ytUf3h39V8ucjb5m8PXlJBCPlPqjgdMCM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.theme.green.rstaz3qrjg.css",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WwSUl+m10JZDJRSqyYAdp4i7Q+xHzUU63IQRx6ZuG5U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rstaz3qrjg"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/owl.theme.green.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WwSUl+m10JZDJRSqyYAdp4i7Q+xHzUU63IQRx6ZuG5U="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.video.play.png",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.video.play.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BDYEVob93xDMu+JWjgy/+0V+fefUPREVwAVugelxSf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BDYEVob93xDMu+JWjgy/+0V+fefUPREVwAVugelxSf8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/assets/owl.video.play.s8sku8kfko.png",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.video.play.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BDYEVob93xDMu+JWjgy/+0V+fefUPREVwAVugelxSf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s8sku8kfko"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/assets/owl.video.play.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BDYEVob93xDMu+JWjgy/+0V+fefUPREVwAVugelxSf8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/LICENSE",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j2NdanE/1fPIlaS8ByYIJIservW2YwW7XoxRK6D56w8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j2NdanE/1fPIlaS8ByYIJIservW2YwW7XoxRK6D56w8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/LICENSE.x0d6diem58",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j2NdanE/1fPIlaS8ByYIJIservW2YwW7XoxRK6D56w8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x0d6diem58"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j2NdanE/1fPIlaS8ByYIJIservW2YwW7XoxRK6D56w8="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/owl.carousel.8vqiqdzfsy.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hPYqnq606IVznFwz1LW0eYgPSxG9O/wyIZT9gK9NvWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8vqiqdzfsy"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/owl.carousel.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hPYqnq606IVznFwz1LW0eYgPSxG9O/wyIZT9gK9NvWQ="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/owl.carousel.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hPYqnq606IVznFwz1LW0eYgPSxG9O/wyIZT9gK9NvWQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hPYqnq606IVznFwz1LW0eYgPSxG9O/wyIZT9gK9NvWQ="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/owl.carousel.min.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/owlcarousel/owl.carousel.min.xre24ck5s9.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xre24ck5s9"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/owlcarousel/owl.carousel.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s5TTOyp+xlSmsDfr/aZhg0Gz+JejYr5iTJI8JxG1SkM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/waypoints/links.php",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/links.php",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/B0WGFVk+67I8B6rSY+WPQ+knhNbPz76gt6aXH8WPOU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/B0WGFVk+67I8B6rSY+WPQ+knhNbPz76gt6aXH8WPOU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/waypoints/links.s65facuhh6.php",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/links.php",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "77"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/B0WGFVk+67I8B6rSY+WPQ+knhNbPz76gt6aXH8WPOU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s65facuhh6"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/waypoints/links.php"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/B0WGFVk+67I8B6rSY+WPQ+knhNbPz76gt6aXH8WPOU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/waypoints/waypoints.min.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/waypoints.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"No2qtnsaWysoAu27rHmiqkupkqLr+cZ7mK14TYAEAYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-No2qtnsaWysoAu27rHmiqkupkqLr+cZ7mK14TYAEAYw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/waypoints/waypoints.min.uydiqv09h2.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/waypoints.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"No2qtnsaWysoAu27rHmiqkupkqLr+cZ7mK14TYAEAYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uydiqv09h2"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/waypoints/waypoints.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-No2qtnsaWysoAu27rHmiqkupkqLr+cZ7mK14TYAEAYw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/wow/wow.6dwowm74tu.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2mEX0KBL4ylqzblacDJEs0pmz9odZ9nvOQ11TbD0XpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6dwowm74tu"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/wow/wow.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2mEX0KBL4ylqzblacDJEs0pmz9odZ9nvOQ11TbD0XpY="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/wow/wow.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2mEX0KBL4ylqzblacDJEs0pmz9odZ9nvOQ11TbD0XpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2mEX0KBL4ylqzblacDJEs0pmz9odZ9nvOQ11TbD0XpY="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/wow/wow.min.g8mioufvz9.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8156"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEFWiimQk+8Wj9ePi1TCfRzwzfro6HDeB2m6EXTGvAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g8mioufvz9"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/lib/wow/wow.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEFWiimQk+8Wj9ePi1TCfRzwzfro6HDeB2m6EXTGvAU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/lib/wow/wow.min.js",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8156"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEFWiimQk+8Wj9ePi1TCfRzwzfro6HDeB2m6EXTGvAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEFWiimQk+8Wj9ePi1TCfRzwzfro6HDeB2m6EXTGvAU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/playerHistory.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/playerHistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UNh43HrrnYyoqEc3u0a/o6TOZcSupd29TvYQMlNWO+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 07:36:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UNh43HrrnYyoqEc3u0a/o6TOZcSupd29TvYQMlNWO+c="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/playerHistory.slmtwss9qx.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/playerHistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UNh43HrrnYyoqEc3u0a/o6TOZcSupd29TvYQMlNWO+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 07:36:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "slmtwss9qx"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/playerHistory.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UNh43HrrnYyoqEc3u0a/o6TOZcSupd29TvYQMlNWO+c="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/players.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/players.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3yj32XVgK18fgSwOSZ/ksfeRtMjGfBislMALBeD3LJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:42:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3yj32XVgK18fgSwOSZ/ksfeRtMjGfBislMALBeD3LJg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/players.nay5k2xwcq.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/players.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3yj32XVgK18fgSwOSZ/ksfeRtMjGfBislMALBeD3LJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 00:42:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nay5k2xwcq"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/players.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3yj32XVgK18fgSwOSZ/ksfeRtMjGfBislMALBeD3LJg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/stats.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/stats.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0HqBjBZCn5jC8WznzzbRwQ8BmT0670G8QSJbnbv7TLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 04:16:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0HqBjBZCn5jC8WznzzbRwQ8BmT0670G8QSJbnbv7TLM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/stats.oms5hhxj67.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/stats.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6988"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0HqBjBZCn5jC8WznzzbRwQ8BmT0670G8QSJbnbv7TLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 04:16:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oms5hhxj67"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/stats.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0HqBjBZCn5jC8WznzzbRwQ8BmT0670G8QSJbnbv7TLM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/teams.h6n3byqxoy.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teams.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6705"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"59RrCCI+Irza1MXKD5voqprL+M17wcUHQ15kF71DlIw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 03:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h6n3byqxoy"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/teams.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-59RrCCI+Irza1MXKD5voqprL+M17wcUHQ15kF71DlIw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/teams.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teams.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6705"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"59RrCCI+Irza1MXKD5voqprL+M17wcUHQ15kF71DlIw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 03:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-59RrCCI+Irza1MXKD5voqprL+M17wcUHQ15kF71DlIw="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/teamTitles.fawkw6101n.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teamTitles.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iReBeyikVDOoH4xq7WF0qbZypsQkXm+kf5JRkjnfujM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 06:48:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fawkw6101n"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/teamTitles.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iReBeyikVDOoH4xq7WF0qbZypsQkXm+kf5JRkjnfujM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/teamTitles.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teamTitles.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iReBeyikVDOoH4xq7WF0qbZypsQkXm+kf5JRkjnfujM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 06:48:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iReBeyikVDOoH4xq7WF0qbZypsQkXm+kf5JRkjnfujM="
+        }
+      ]
+    }
+  ]
+}

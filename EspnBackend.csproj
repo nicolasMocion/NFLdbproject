@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Downgrade Microsoft.AspNetCore.OpenApi to a compatible version for .NET 8 -->
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+    
+    <!-- Keep only one Microsoft.EntityFrameworkCore.Design reference -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />
+
+    <!-- Microsoft.EntityFrameworkCore (same version for consistency) -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
+
+    <!-- Make sure you have the correct version of Pomelo.EntityFrameworkCore.MySql -->
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

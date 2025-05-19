@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NFL HERO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   
+
+ <!-- Navbar Start -->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 class="text-primary m-0">NFL HERO</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="product.html" class="nav-item nav-link active">Products</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu m-0">
+                    <a href="team.html" class="dropdown-item">Our Team</a>
+                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    <a href="404.html" class="dropdown-item">404 Page</a>
+                </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class=" d-none d-lg-flex">
+            <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                <i class="fa fa-phone text-primary"></i>
+            </div>
+            <div class="ps-3">
+                <small class="text-primary mb-0">Call Us</small>
+                <p class="text-light fs-5 mb-0">+012 345 6789</p>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+<div class="container mt-5 pt-5">
+
+    <div class="mb-4 row text-light"> 
+        <div class="col-md-3">
+            <label>Player</label>
+            <select id="filter-player" class="form-select"><option value="">All</option></select>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="sort-select" class="form-label text-light">Sort By:</label>
+        <select id="sort-select" class="form-select w-auto d-inline-block">
+            <option value="playerName">Player Name</option>
+            <option value="touchdowns">Touchdowns</option>
+            <option value="yards">Yards</option>
+            <option value="interceptions">interceptions</option>
+        </select>
+
+        <button id="asc-btn" class="btn btn-primary ms-2">Asc</button>
+        <button id="desc-btn" class="btn btn-secondary ms-1">Desc</button>
+    </div>
+
+    <h4 class="mt-5">Player Stats</h4>
+    <table id="entity-table" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th><th>Player</th><th>Touchdowns</th><th>Yards</th><th>Interceptions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script>
+    let currentOrder = "asc";
+
+    // Llenar el select con jugadores únicos
+    async function loadPlayers() {
+        const response = await fetch("/api/playerstats");
+        const data = await response.json();
+        const playerSelect = document.getElementById("filter-player");
+
+        const names = [...new Set(data.map(p => p.playerName))];
+        names.forEach(name => {
+            const option = document.createElement("option");
+            option.value = name;
+            option.textContent = name;
+            playerSelect.appendChild(option);
+        });
+    }
+
+    async function loadPlayerStats() {
+        const sortBy = document.getElementById("sort-select").value.toLowerCase();
+        const player = document.getElementById("filter-player").value;
+        const url = new URL("/api/playerstats/filter", window.location.origin);
+
+        url.searchParams.append("sortBy", sortBy);
+        url.searchParams.append("order", currentOrder);
+        if (player) url.searchParams.append("playername", player);
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        const tbody = document.querySelector("#entity-table tbody");
+        tbody.innerHTML = "";
+
+        data.forEach(stat => {
+            const row = `
+                <tr>
+                    <td>${stat.id}</td>
+                    <td>${stat.playerName}</td>
+                    <td>${stat.touchdowns}</td>
+                    <td>${stat.yards}</td>
+                    <td>${stat.interceptions}</td>
+                </tr>`;
+            tbody.innerHTML += row;
+        });
+    }
+
+    document.getElementById("sort-select").addEventListener("change", loadPlayerStats);
+    document.getElementById("filter-player").addEventListener("change", loadPlayerStats);
+    document.getElementById("asc-btn").addEventListener("click", () => {
+        currentOrder = "asc";
+        loadPlayerStats();
+    });
+    document.getElementById("desc-btn").addEventListener("click", () => {
+        currentOrder = "desc";
+        loadPlayerStats();
+    });
+
+    document.addEventListener("DOMContentLoaded", async () => {
+        await loadPlayers();
+        await loadPlayerStats();
+    });
+</script>

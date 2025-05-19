@@ -1,0 +1,245 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coachHistory.html",
+      "PackagePath": "staticwebassets/Frontend/public/coachHistory.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coaches.html",
+      "PackagePath": "staticwebassets/Frontend/public/coaches.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/Frontend/public/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/style.css",
+      "PackagePath": "staticwebassets/Frontend/public/css/style.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/games.html",
+      "PackagePath": "staticwebassets/Frontend/public/games.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-1.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/about-1.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/about-2.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/about-2.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/blue.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/blue.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-1.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/carousel-1.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/carousel-2.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/carousel-2.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-1.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/product-1.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-2.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/product-2.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/product-3.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/product-3.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/purple.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/purple.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-1.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/service-1.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/service-2.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/service-2.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-1.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/team-1.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-2.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/team-2.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-3.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/team-3.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/team-4.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/team-4.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-1.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/testimonial-1.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-2.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/testimonial-2.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-3.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/testimonial-3.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/testimonial-4.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/testimonial-4.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/torta1.jpeg",
+      "PackagePath": "staticwebassets/Frontend/public/img/torta1.jpeg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/tortaR.jpeg",
+      "PackagePath": "staticwebassets/Frontend/public/img/tortaR.jpeg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wine.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/wine.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/img/wineJumbo.jpg",
+      "PackagePath": "staticwebassets/Frontend/public/img/wineJumbo.jpg"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/index.html",
+      "PackagePath": "staticwebassets/Frontend/public/index.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/js/main.js",
+      "PackagePath": "staticwebassets/Frontend/public/js/main.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/animate/animate.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/animate/animate.min.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/animate/animate.min.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/counterup/counterup.min.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/counterup/counterup.min.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/easing/easing.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/easing/easing.min.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/easing/easing.min.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/LICENSE",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/ajax-loader.gif",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/ajax-loader.gif"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/owl.carousel.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/owl.theme.default.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/owl.theme.default.min.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/owl.theme.green.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/owl.theme.green.min.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/assets/owl.video.play.png",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/assets/owl.video.play.png"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/owl.carousel.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/owlcarousel/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/owlcarousel/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/links.php",
+      "PackagePath": "staticwebassets/Frontend/public/lib/waypoints/links.php"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/waypoints/waypoints.min.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/waypoints/waypoints.min.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/wow/wow.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/lib/wow/wow.min.js",
+      "PackagePath": "staticwebassets/Frontend/public/lib/wow/wow.min.js"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/playerHistory.html",
+      "PackagePath": "staticwebassets/Frontend/public/playerHistory.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/players.html",
+      "PackagePath": "staticwebassets/Frontend/public/players.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/stats.html",
+      "PackagePath": "staticwebassets/Frontend/public/stats.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teamTitles.html",
+      "PackagePath": "staticwebassets/Frontend/public/teamTitles.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teams.html",
+      "PackagePath": "staticwebassets/Frontend/public/teams.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.EspnBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.EspnBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.EspnBackend.props",
+      "PackagePath": "build\\EspnBackend.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.EspnBackend.props",
+      "PackagePath": "buildMultiTargeting\\EspnBackend.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.EspnBackend.props",
+      "PackagePath": "buildTransitive\\EspnBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
