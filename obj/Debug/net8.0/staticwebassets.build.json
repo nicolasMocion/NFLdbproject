@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LQIEITnb+az2CqUmmK9eirXpcPB4GOzFF/6xBeXE10g=",
+  "Hash": "ZOPvA6PH/l4QQN4HyufYrAXR0TWku8vrOX6Vs683/64=",
   "Source": "EspnBackend",
   "BasePath": "_content/EspnBackend",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/adminDashboard.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/adminDashboard#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2s2tik00es",
+      "Integrity": "ripr3CGMIz7yyeX18pN0Nf5l7csLrOlTT90Zqam+3WQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/adminDashboard.html"
+    },
     {
       "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coaches.html",
       "SourceId": "EspnBackend",
@@ -59,6 +80,27 @@
       "OriginalItemSpec": "wwwroot/Frontend/public/coachHistory.html"
     },
     {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/createAccount.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/createAccount#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z6r64egpy8",
+      "Integrity": "K4v3j8WWGf5qLpR+CnRaCMQdAqLyoltM7q55olrEFp4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/createAccount.html"
+    },
+    {
       "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/bootstrap.min.css",
       "SourceId": "EspnBackend",
       "SourceType": "Discovered",
@@ -99,6 +141,237 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/css/style.css"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-cities.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-cities#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f2gktzwv2q",
+      "Integrity": "qQgQzqWtTob5ia3CRcvzRL3cv/7dyb+zWpf5GC4s+zI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-cities.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coaches.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-coaches#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "agmsjbt96h",
+      "Integrity": "qm+v9y8+Gs10r9xBHD8Dq+/t6gWZYKhYtUGe7sv2Low=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-coaches.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coacheshistory.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-coacheshistory#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "smx901c9jy",
+      "Integrity": "fEmuqGvvugn5UERE0cY/qikUZ+afNkCTkhvRt3FMZ0I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-coacheshistory.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-colleges.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-colleges#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zecsi0ku6d",
+      "Integrity": "JcB7I6yHLXrRFKgWWyZ/7ZOyU9WEuCxI5Xe5yYWuKSE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-colleges.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-games.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-games#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xh9pq8utey",
+      "Integrity": "VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-games.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerHistory.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-playerHistory#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yz1dqe7eai",
+      "Integrity": "Xo1bGCQf7AstgGUlqA6J2W5LzDeos4cdlPX2fSZn0Gk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-playerHistory.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-players.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-players#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b7y2dzgfk8",
+      "Integrity": "WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-players.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerStats.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-playerStats#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qhvp1rax4y",
+      "Integrity": "Usdb5z6WpwH89imITxsJbs3IwzGx4SNLCiabmF//1vQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-playerStats.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadium.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-stadium#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vbgd0y4wtv",
+      "Integrity": "FWR/FewmVsqQvJUOuR30EMIxtUwCR1Rd/tPWpoFhYrg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-stadium.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teams.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-teams#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xytleu1o2n",
+      "Integrity": "B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-teams.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teamTitles.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/edit-teamTitles#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ckhsnld9sv",
+      "Integrity": "7EKt75Gh8oka4kc0L5nVgP5ZV021vpsFOxLFGY9gESU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-teamTitles.html"
     },
     {
       "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/games.html",
@@ -1067,6 +1340,27 @@
       "OriginalItemSpec": "wwwroot/Frontend/public/lib/wow/wow.min.js"
     },
     {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/login.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vz52ambo6q",
+      "Integrity": "JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/login.html"
+    },
+    {
       "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/playerHistory.html",
       "SourceId": "EspnBackend",
       "SourceType": "Discovered",
@@ -1170,9 +1464,112 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/teamTitles.html"
+    },
+    {
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/userDashboard.html",
+      "SourceId": "EspnBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
+      "BasePath": "_content/EspnBackend",
+      "RelativePath": "Frontend/public/userDashboard#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0kdau228ry",
+      "Integrity": "4Fb/XBF2Og/POcqmH3hFucEX4zHhQD74RQTbcI7B/wU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Frontend/public/userDashboard.html"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "Frontend/public/adminDashboard.2s2tik00es.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/adminDashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10869"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ripr3CGMIz7yyeX18pN0Nf5l7csLrOlTT90Zqam+3WQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 21:57:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2s2tik00es"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/adminDashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ripr3CGMIz7yyeX18pN0Nf5l7csLrOlTT90Zqam+3WQ="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/adminDashboard.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/adminDashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10869"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ripr3CGMIz7yyeX18pN0Nf5l7csLrOlTT90Zqam+3WQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 21:57:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ripr3CGMIz7yyeX18pN0Nf5l7csLrOlTT90Zqam+3WQ="
+        }
+      ]
+    },
     {
       "Route": "Frontend/public/coaches.6wnu51awco.html",
       "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coaches.html",
@@ -1196,7 +1593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 06:35:54 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1241,7 +1638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 06:35:54 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1278,7 +1675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 07:44:01 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1315,7 +1712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 07:44:01 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1334,6 +1731,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-OeZujHGSM0vKGRS6D35zZbahxGDPlmmdBitLLP/aKm0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/createAccount.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/createAccount.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6310"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K4v3j8WWGf5qLpR+CnRaCMQdAqLyoltM7q55olrEFp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 16:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K4v3j8WWGf5qLpR+CnRaCMQdAqLyoltM7q55olrEFp4="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/createAccount.z6r64egpy8.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/createAccount.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6310"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K4v3j8WWGf5qLpR+CnRaCMQdAqLyoltM7q55olrEFp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 16:10:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z6r64egpy8"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/createAccount.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K4v3j8WWGf5qLpR+CnRaCMQdAqLyoltM7q55olrEFp4="
         }
       ]
     },
@@ -1360,7 +1839,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1405,7 +1884,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1442,7 +1921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:43:51 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1479,7 +1958,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:43:51 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1498,6 +1977,908 @@
         {
           "Name": "integrity",
           "Value": "sha256-LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-cities.f2gktzwv2q.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-cities.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qQgQzqWtTob5ia3CRcvzRL3cv/7dyb+zWpf5GC4s+zI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 20:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f2gktzwv2q"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-cities.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qQgQzqWtTob5ia3CRcvzRL3cv/7dyb+zWpf5GC4s+zI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-cities.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-cities.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qQgQzqWtTob5ia3CRcvzRL3cv/7dyb+zWpf5GC4s+zI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 20:43:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qQgQzqWtTob5ia3CRcvzRL3cv/7dyb+zWpf5GC4s+zI="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-coaches.agmsjbt96h.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coaches.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qm+v9y8+Gs10r9xBHD8Dq+/t6gWZYKhYtUGe7sv2Low=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 08:00:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "agmsjbt96h"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-coaches.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qm+v9y8+Gs10r9xBHD8Dq+/t6gWZYKhYtUGe7sv2Low="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-coaches.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coaches.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qm+v9y8+Gs10r9xBHD8Dq+/t6gWZYKhYtUGe7sv2Low=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 08:00:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qm+v9y8+Gs10r9xBHD8Dq+/t6gWZYKhYtUGe7sv2Low="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-coacheshistory.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coacheshistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fEmuqGvvugn5UERE0cY/qikUZ+afNkCTkhvRt3FMZ0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 15:19:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fEmuqGvvugn5UERE0cY/qikUZ+afNkCTkhvRt3FMZ0I="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-coacheshistory.smx901c9jy.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coacheshistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fEmuqGvvugn5UERE0cY/qikUZ+afNkCTkhvRt3FMZ0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 15:19:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "smx901c9jy"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-coacheshistory.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fEmuqGvvugn5UERE0cY/qikUZ+afNkCTkhvRt3FMZ0I="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-colleges.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-colleges.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JcB7I6yHLXrRFKgWWyZ/7ZOyU9WEuCxI5Xe5yYWuKSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 20:46:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JcB7I6yHLXrRFKgWWyZ/7ZOyU9WEuCxI5Xe5yYWuKSE="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-colleges.zecsi0ku6d.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-colleges.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JcB7I6yHLXrRFKgWWyZ/7ZOyU9WEuCxI5Xe5yYWuKSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 20:46:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zecsi0ku6d"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-colleges.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JcB7I6yHLXrRFKgWWyZ/7ZOyU9WEuCxI5Xe5yYWuKSE="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-games.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-games.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 06:15:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-games.xh9pq8utey.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-games.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 06:15:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xh9pq8utey"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-games.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-playerHistory.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerHistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9296"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xo1bGCQf7AstgGUlqA6J2W5LzDeos4cdlPX2fSZn0Gk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 13:57:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xo1bGCQf7AstgGUlqA6J2W5LzDeos4cdlPX2fSZn0Gk="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-playerHistory.yz1dqe7eai.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerHistory.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9296"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xo1bGCQf7AstgGUlqA6J2W5LzDeos4cdlPX2fSZn0Gk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 13:57:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yz1dqe7eai"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-playerHistory.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xo1bGCQf7AstgGUlqA6J2W5LzDeos4cdlPX2fSZn0Gk="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-players.b7y2dzgfk8.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-players.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 13:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7y2dzgfk8"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-players.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-players.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-players.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 13:13:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-playerStats.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerStats.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Usdb5z6WpwH89imITxsJbs3IwzGx4SNLCiabmF//1vQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 08:54:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Usdb5z6WpwH89imITxsJbs3IwzGx4SNLCiabmF//1vQ="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-playerStats.qhvp1rax4y.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerStats.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Usdb5z6WpwH89imITxsJbs3IwzGx4SNLCiabmF//1vQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 08:54:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qhvp1rax4y"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-playerStats.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Usdb5z6WpwH89imITxsJbs3IwzGx4SNLCiabmF//1vQ="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-stadium.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadium.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FWR/FewmVsqQvJUOuR30EMIxtUwCR1Rd/tPWpoFhYrg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 15:44:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FWR/FewmVsqQvJUOuR30EMIxtUwCR1Rd/tPWpoFhYrg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-stadium.vbgd0y4wtv.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadium.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FWR/FewmVsqQvJUOuR30EMIxtUwCR1Rd/tPWpoFhYrg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 15:44:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vbgd0y4wtv"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-stadium.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FWR/FewmVsqQvJUOuR30EMIxtUwCR1Rd/tPWpoFhYrg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-teams.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teams.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 08:41:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-teams.xytleu1o2n.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teams.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 08:41:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xytleu1o2n"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-teams.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-teamTitles.ckhsnld9sv.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teamTitles.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7EKt75Gh8oka4kc0L5nVgP5ZV021vpsFOxLFGY9gESU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 15:30:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ckhsnld9sv"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-teamTitles.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7EKt75Gh8oka4kc0L5nVgP5ZV021vpsFOxLFGY9gESU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-teamTitles.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teamTitles.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7EKt75Gh8oka4kc0L5nVgP5ZV021vpsFOxLFGY9gESU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 15:30:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7EKt75Gh8oka4kc0L5nVgP5ZV021vpsFOxLFGY9gESU="
         }
       ]
     },
@@ -1524,7 +2905,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 06:12:57 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1561,7 +2942,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 06:12:57 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1606,7 +2987,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1651,7 +3032,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1688,7 +3069,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1733,7 +3114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1770,7 +3151,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1815,7 +3196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1852,7 +3233,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1889,7 +3270,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1934,7 +3315,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1979,7 +3360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2016,7 +3397,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2061,7 +3442,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2098,7 +3479,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2135,7 +3516,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2180,7 +3561,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2217,7 +3598,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2262,7 +3643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2299,7 +3680,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2344,7 +3725,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2381,7 +3762,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2426,7 +3807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2471,7 +3852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2508,7 +3889,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2553,7 +3934,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2590,7 +3971,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2635,7 +4016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2672,7 +4053,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2709,7 +4090,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2754,7 +4135,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2799,7 +4180,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2836,7 +4217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2873,7 +4254,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2918,7 +4299,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2963,7 +4344,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3000,7 +4381,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3045,7 +4426,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3082,7 +4463,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3127,7 +4508,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3164,7 +4545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3201,7 +4582,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3246,7 +4627,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3283,7 +4664,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3328,7 +4709,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3365,7 +4746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3410,7 +4791,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3455,7 +4836,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3492,7 +4873,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3537,7 +4918,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3574,7 +4955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:47:21 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3611,7 +4992,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:47:21 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3656,7 +5037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3693,7 +5074,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3738,7 +5119,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3775,7 +5156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3820,7 +5201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3857,7 +5238,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3902,7 +5283,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3947,7 +5328,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3984,7 +5365,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4029,7 +5410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4066,7 +5447,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4103,7 +5484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4148,7 +5529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4185,7 +5566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4230,7 +5611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4267,7 +5648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4312,7 +5693,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4357,7 +5738,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4394,7 +5775,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4439,7 +5820,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4476,7 +5857,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4513,7 +5894,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4558,7 +5939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4595,7 +5976,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4640,7 +6021,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4677,7 +6058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4722,7 +6103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4759,7 +6140,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4804,7 +6185,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4849,7 +6230,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4886,7 +6267,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4923,7 +6304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4968,7 +6349,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5005,7 +6386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5050,7 +6431,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5087,7 +6468,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5132,7 +6513,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5177,7 +6558,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5214,7 +6595,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5259,7 +6640,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 16 May 2025 01:20:44 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5270,6 +6651,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-EEFWiimQk+8Wj9ePi1TCfRzwzfro6HDeB2m6EXTGvAU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/login.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 16:15:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/login.vz52ambo6q.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8138"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 16:15:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vz52ambo6q"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek="
         }
       ]
     },
@@ -5296,7 +6759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 07:36:46 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5333,7 +6796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 07:36:46 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5378,7 +6841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 00:42:46 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5415,7 +6878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 00:42:46 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5460,7 +6923,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 04:16:17 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5497,7 +6960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 04:16:17 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5542,7 +7005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 03:11:29 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5587,7 +7050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 03:11:29 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5624,7 +7087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 06:48:37 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5669,7 +7132,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 06:48:37 GMT"
+          "Value": "Mon, 19 May 2025 08:08:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5680,6 +7143,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-iReBeyikVDOoH4xq7WF0qbZypsQkXm+kf5JRkjnfujM="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/userDashboard.0kdau228ry.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/userDashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4Fb/XBF2Og/POcqmH3hFucEX4zHhQD74RQTbcI7B/wU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 21:41:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0kdau228ry"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/userDashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4Fb/XBF2Og/POcqmH3hFucEX4zHhQD74RQTbcI7B/wU="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/userDashboard.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/userDashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4Fb/XBF2Og/POcqmH3hFucEX4zHhQD74RQTbcI7B/wU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 May 2025 21:41:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4Fb/XBF2Og/POcqmH3hFucEX4zHhQD74RQTbcI7B/wU="
         }
       ]
     }

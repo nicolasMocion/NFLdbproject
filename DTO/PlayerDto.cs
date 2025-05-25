@@ -8,6 +8,12 @@ namespace EspnBackend.DTO{
         public int CollegeId { get; set; }
         public int TeamId { get; set; }
         public int HomeTownCityId { get; set; }
+
+
+        // Add these display properties
+        public string? TeamName { get; set; }
+        public string? CollegeName { get; set; }
+        public string? HomeTownName { get; set; }
     }
 
 }

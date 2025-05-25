@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+            <meta charset="utf-8">
+            <title>Misia Juaca</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            <meta content="" name="keywords">
+            <meta content="" name="description">
+        
+            <!-- Favicon -->
+            <link href="img/favicon.ico" rel="icon">
+        
+            <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+        
+            <!-- Icon Font Stylesheet -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        
+            <!-- Libraries Stylesheet -->
+            <link href="lib/animate/animate.min.css" rel="stylesheet">
+            <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+            <!-- Template Stylesheet -->
+            <link href="css/style.css" rel="stylesheet">
+        </head>
+        <title>Edit Games - NFL Admin</title>
+    </head>
+<body>
+    <!-- Navbar (same as your existing one) -->
+
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 class="text-primary m-0">NFL HERO</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <a href="product.html" class="nav-item nav-link active">Products</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu m-0">
+                    <a href="team.html" class="dropdown-item">Our Team</a>
+                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    <a href="404.html" class="dropdown-item">404 Page</a>
+                </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class=" d-none d-lg-flex">
+            <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                <i class="fa fa-phone text-primary"></i>
+            </div>
+            <div class="ps-3">
+                <small class="text-primary mb-0">Call Us</small>
+                <p class="text-light fs-5 mb-0">+012 345 6789</p>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+    
+
+
+    <div class="container py-5 mt-5">
+        <div class="card shadow p-4 form-container">
+            <h3 class="text-success mb-4">Manage Teams</h3>
+    
+            <div class="table-responsive mb-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Stadium</th>
+                            <th>City</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="teamsTableBody">
+                        <tr><td colspan="4" class="text-center">Loading teams...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <h4 class="mb-3">Add/Edit Team</h4>
+            <form id="teamForm">
+                <input type="hidden" id="teamId">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" id="teamName" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Stadium</label>
+                        <input type="text" class="form-control" id="teamStadium" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">City</label>
+                        <select class="form-select" id="teamCity" required></select>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <button type="submit" class="btn btn-success">Save Team</button>
+                        <button type="button" class="btn btn-outline-secondary ms-2" id="resetTeamForm">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        const teamBaseUrl = 'http://localhost:5149/api/AdminTeams';
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTeams();
+            loadTeamDropdowns();
+    
+            document.getElementById('teamForm').addEventListener('submit', saveTeam);
+            document.getElementById('resetTeamForm').addEventListener('click', () => {
+                document.getElementById('teamForm').reset();
+                document.getElementById('teamId').value = '';
+            });
+        });
+    
+        function loadTeams() {
+            fetch(`${teamBaseUrl}/all`)
+                .then(res => res.json())
+                .then(teams => {
+                    const tbody = document.getElementById('teamsTableBody');
+                    tbody.innerHTML = teams.map(t => `
+                        <tr>
+                            <td>${t.name}</td>
+                            <td>${t.stadium}</td>
+                            <td>${t.city}</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm me-1" onclick='editTeam(${JSON.stringify(t)})'>Edit</button>
+                                <button class="btn btn-danger btn-sm" onclick="deleteTeam(${t.id})">Delete</button>
+                            </td>
+                        </tr>
+                    `).join('');
+                });
+        }
+    
+        function loadTeamDropdowns() {
+            fetch(`${teamBaseUrl}/dropdown-data`)
+                .then(res => res.json())
+                .then(data => {
+                    const cityOptions = data.cities.map(c => `<option value="${c.name}">${c.name}</option>`).join('');
+                    document.getElementById('teamCity').innerHTML = cityOptions;
+                });
+        }
+    
+        function saveTeam(event) {
+            event.preventDefault();
+            const id = document.getElementById('teamId').value;
+            const dto = {
+                name: document.getElementById('teamName').value,
+                stadium: document.getElementById('teamStadium').value,
+                city: document.getElementById('teamCity').value
+            };
+    
+            const method = id ? 'PUT' : 'POST';
+            const url = id ? `${teamBaseUrl}/dto/${id}` : `${teamBaseUrl}`;
+    
+            fetch(url, {
+                method,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(dto)
+            }).then(() => {
+                loadTeams();
+                document.getElementById('teamForm').reset();
+                document.getElementById('teamId').value = '';
+            });
+        }
+    
+        function editTeam(t) {
+            document.getElementById('teamId').value = t.id;
+            document.getElementById('teamName').value = t.name;
+            document.getElementById('teamStadium').value = t.stadium;
+            document.getElementById('teamCity').value = t.city;
+        }
+    
+        function deleteTeam(id) {
+            if (confirm("Are you sure you want to delete this team?")) {
+                fetch(`${teamBaseUrl}/${id}`, { method: 'DELETE' })
+                    .then(() => loadTeams());
+            }
+        }
+    </script>
+</body>
+</html>

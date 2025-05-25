@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/adminDashboard.html",
+      "PackagePath": "staticwebassets/Frontend/public/adminDashboard.html"
+    },
+    {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coachHistory.html",
       "PackagePath": "staticwebassets/Frontend/public/coachHistory.html"
     },
@@ -9,12 +13,60 @@
       "PackagePath": "staticwebassets/Frontend/public/coaches.html"
     },
     {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/createAccount.html",
+      "PackagePath": "staticwebassets/Frontend/public/createAccount.html"
+    },
+    {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/bootstrap.min.css",
       "PackagePath": "staticwebassets/Frontend/public/css/bootstrap.min.css"
     },
     {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/style.css",
       "PackagePath": "staticwebassets/Frontend/public/css/style.css"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-cities.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-cities.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coaches.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-coaches.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-coacheshistory.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-coacheshistory.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-colleges.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-colleges.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-games.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-games.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerHistory.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-playerHistory.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-playerStats.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-playerStats.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-players.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-players.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadium.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-stadium.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teamTitles.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-teamTitles.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teams.html",
+      "PackagePath": "staticwebassets/Frontend/public/edit-teams.html"
     },
     {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/games.html",
@@ -201,6 +253,10 @@
       "PackagePath": "staticwebassets/Frontend/public/lib/wow/wow.min.js"
     },
     {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/login.html",
+      "PackagePath": "staticwebassets/Frontend/public/login.html"
+    },
+    {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/playerHistory.html",
       "PackagePath": "staticwebassets/Frontend/public/playerHistory.html"
     },
@@ -219,6 +275,10 @@
     {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/teams.html",
       "PackagePath": "staticwebassets/Frontend/public/teams.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/userDashboard.html",
+      "PackagePath": "staticwebassets/Frontend/public/userDashboard.html"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.EspnBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

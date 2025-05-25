@@ -1,0 +1,29 @@
+// POST: api/AdminGames (DTO version)
+    [HttpPost("dto")]
+    public async Task<ActionResult> CreateGameFromDto(AdminGameEditDto dto)
+    {
+        var game = new NFLGame
+        {
+            // Map properties from AdminGameEditDto to NFLGame
+            // Add properties as needed
+        };
+
+        _context.NFLGames.Add(game);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetGame), new { id = game.Id }, game);
+    }
+
+    // PUT: api/AdminGames/dto/{id}
+    [HttpPut("dto/{id}")]
+    public async Task<ActionResult> UpdateGameFromDto(int id, AdminGameEditDto dto)
+    {
+        var game = await _context.NFLGames.FindAsync(id);
+        if (game == null)
+            return NotFound();
+
+        // Update game properties from dto
+        // game.Property = dto.Property;
+
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }

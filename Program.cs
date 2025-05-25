@@ -4,14 +4,16 @@ using Microsoft.EntityFrameworkCore;
 using EspnBackend.Database;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
+using System.Security.Cryptography;
+using System.Text;
+using EspnBackend.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Set the port
 builder.WebHost.UseUrls("http://localhost:5149");
 
-// Add services to the container
-
-// Enable CORS (adjust origins for production)
+// Add services
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -22,53 +24,71 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Add controllers with views (for Razor Pages / MVC)
 builder.Services.AddControllersWithViews();
 
-// Configure DbContext with MySQL connection
 builder.Services.AddDbContext<EspnDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         new MySqlServerVersion(new Version(8, 0, 36))
     ));
 
+builder.Services.AddSession();
+
 var app = builder.Build();
 
-// Use CORS middleware
+// Use middleware
 app.UseCors();
-
-// Use routing middleware
 app.UseRouting();
+app.UseSession();
+app.UseAuthorization();
 
-// Serve static files from wwwroot/Frontend/public as root
+// Serve static files from wwwroot/Frontend/public
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
         Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Frontend", "public")),
-    RequestPath = ""  // Serve at root URL
+    RequestPath = ""
 });
-
-// Authorization middleware (only if you use authentication/authorization)
-app.UseAuthorization();
 
 app.MapControllers();
 
-// Map controller routes (important for MVC to work)
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Players}/{action=Index}/{id?}");
 
-// Seed the database before app runs
-try
+// ✅ Scoped block for seeding
+using (var scope = app.Services.CreateScope())
 {
-    var seeder = new DatabaseSeeder(builder.Configuration.GetConnectionString("DefaultConnection"));
-    seeder.Seed();
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Seeding error: {ex.Message}");
-    // You could log or handle exceptions here if needed
+    var context = scope.ServiceProvider.GetRequiredService<EspnDbContext>();
+
+    // Seed AdminUser
+    if (!context.AdminUsers.Any())
+    {
+        var password = "yuki24";
+        using var sha256 = SHA256.Create();
+        var hash = Convert.ToBase64String(sha256.ComputeHash(Encoding.UTF8.GetBytes(password)));
+
+        context.AdminUsers.Add(new AdminUser
+        {
+            Username = "admin",
+            PasswordHash = hash,
+        });
+        context.SaveChanges();
+        Console.WriteLine("Admin user seeded.");
+    }
+
+    // ✅ Custom raw SQL seeder
+    try
+    {
+        var configuration = scope.ServiceProvider.GetRequiredService<IConfiguration>();
+        var seeder = new DatabaseSeeder(configuration.GetConnectionString("DefaultConnection"));
+        seeder.Seed();
+        Console.WriteLine("Custom database seed executed.");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Seeding error: {ex.Message}");
+    }
 }
 
-// Run the app
 app.Run();

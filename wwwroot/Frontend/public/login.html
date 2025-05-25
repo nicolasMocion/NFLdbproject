@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Misia Juaca</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+ 
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 class="text-primary m-0">NFL HERO</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a href="login.html" class="nav-item nav-link">Login</a>
+            <a href="teams.html" class="nav-item nav-link">Teams</a>
+            <a href="Players.html" class="nav-item nav-link">Players</a>
+            <a href="teamTtiles.html" class="nav-item nav-link active">Titles</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu m-0">
+                    <a href="team.html" class="dropdown-item">Our Team</a>
+                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    <a href="404.html" class="dropdown-item">404 Page</a>
+                </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+<!-- Login Beggining -->
+
+<div class="container py-5 mt-5 d-flex justify-content-center align-items-center">
+    <div class="card shadow" style="width: 100%; max-width: 400px;">
+        <div class="card-body">
+            <h4 class="card-title text-center mb-4">Iniciar Sesión</h4>
+            <form id="loginForm" action="/login" method="POST">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="username" name="username" required />
+                    <div id="usernameError" class="text-danger mt-2" style="display: none;">Usuario o contraseña incorrecto</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" required />
+                    <div id="passwordError" class="text-danger mt-2" style="display: none;">Contraseña incorrecta</div>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Login End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script>
+    const loginForm = document.getElementById('loginForm');
+
+    loginForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const usernameError = document.getElementById('usernameError');
+        const passwordError = document.getElementById('passwordError');
+
+        // Clear any visible errors
+        usernameError.style.display = 'none';
+        passwordError.style.display = 'none';
+
+        try {
+            const response = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: usernameInput.value,
+                    password: passwordInput.value
+                })
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                // Save to localStorage if needed
+                localStorage.setItem('username', usernameInput.value);
+                localStorage.setItem('role', data.role);
+
+                // Redirect based on what backend tells us
+                window.location.href = data.redirectUrl;
+            } else {
+                usernameError.style.display = 'block';
+                passwordError.style.display = 'block';
+                passwordInput.value = '';
+            }
+        } catch (error) {
+            console.error('Login failed:', error);
+            usernameError.style.display = 'block';
+            passwordError.style.display = 'block';
+            passwordInput.value = '';
+        }
+    });
+</script>
