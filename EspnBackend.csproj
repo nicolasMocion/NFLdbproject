@@ -9,6 +9,7 @@
   <ItemGroup>
     <!-- Downgrade Microsoft.AspNetCore.OpenApi to a compatible version for .NET 8 -->
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
     
     <!-- Keep only one Microsoft.EntityFrameworkCore.Design reference -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13">

@@ -22,22 +22,28 @@ public class AdminGamesController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<NFLGame>>> GetGames()
     {
-        return await _context.NFLGames
-            .Include(g => g.HomeTeam)
-            .Include(g => g.AwayTeam)
-            .Include(g => g.Season)
+        // Raw SQL with joins to get all games with their related data
+        var sql = @"
+            SELECT g.*
+            FROM NFLGames g
+        ";
+
+        // Here we fetch raw NFLGames, but without joins because we return NFLGame entities only.
+        // For related data, you'd need manual joins and mapping to DTOs or navigation property eager load - EF Core can't auto map includes in raw SQL.
+
+        var games = await _context.NFLGames
+            .FromSqlRaw(sql)
             .ToListAsync();
+
+        return games;
     }
 
     // GET: api/AdminGames/5
     [HttpGet("{id}")]
     public async Task<ActionResult<NFLGame>> GetGame(int id)
     {
-        var game = await _context.NFLGames
-            .Include(g => g.HomeTeam)
-            .Include(g => g.AwayTeam)
-            .Include(g => g.Season)
-            .FirstOrDefaultAsync(g => g.Id == id);
+        var sql = @"SELECT * FROM NFLGames WHERE Id = {0}";
+        var game = await _context.NFLGames.FromSqlRaw(sql, id).FirstOrDefaultAsync();
 
         if (game == null)
             return NotFound();
@@ -45,111 +51,124 @@ public class AdminGamesController : ControllerBase
         return game;
     }
 
-    // POST: api/AdminGames
+    // POST: api/AdminGames/dto
     [HttpPost("dto")]
     public async Task<ActionResult<NFLGame>> CreateGame(AdminGameEditDto dto)
     {
-        var game = new NFLGame
-        {
-            GameDate = dto.GameDate,
-            HomeTeamId = dto.HomeTeamId,
-            AwayTeamId = dto.AwayTeamId,
-            HomeScore = dto.HomeScore,
-            AwayScore = dto.AwayScore,
-            SeasonId = dto.SeasonId
-        };
+        var sql = @"
+            INSERT INTO NFLGames (GameDate, HomeTeamId, AwayTeamId, HomeScore, AwayScore, SeasonId)
+            VALUES ({0}, {1}, {2}, {3}, {4}, {5});
+            SELECT LAST_INSERT_ID();";
 
-        _context.NFLGames.Add(game);
-        await _context.SaveChangesAsync();
+        var id = await _context.Database.ExecuteSqlRawAsync(
+            @"INSERT INTO NFLGames (GameDate, HomeTeamId, AwayTeamId, HomeScore, AwayScore, SeasonId)
+              VALUES ({0}, {1}, {2}, {3}, {4}, {5})",
+            dto.GameDate, dto.HomeTeamId, dto.AwayTeamId, dto.HomeScore, dto.AwayScore, dto.SeasonId);
 
-        return CreatedAtAction(nameof(GetGame), new { id = game.Id }, game);
+        // Unfortunately, ExecuteSqlRawAsync returns number of rows affected, not the inserted ID.
+        // For getting inserted ID, you can do:
+        // var id = await _context.NFLGames.Select(g => g.Id).MaxAsync(); // unsafe in concurrent env.
+        // OR use a raw SQL scalar query:
+        var insertedId = await _context.NFLGames
+            .FromSqlRaw("SELECT * FROM NFLGames ORDER BY Id DESC LIMIT 1")
+            .Select(g => g.Id)
+            .FirstAsync();
+
+        var game = await _context.NFLGames.FindAsync(insertedId);
+
+        return CreatedAtAction(nameof(GetGame), new { id = insertedId }, game);
     }
 
+    // PUT: api/AdminGames/dto/{id}
     [HttpPut("dto/{id}")]
-public async Task<IActionResult> UpdateGame(int id, AdminGameEditDto dto)
-{
-    var existingGame = await _context.NFLGames.FindAsync(id);
-    if (existingGame == null)
-        return NotFound();
+    public async Task<IActionResult> UpdateGame(int id, AdminGameEditDto dto)
+    {
+        var existing = await _context.NFLGames.FindAsync(id);
+        if (existing == null)
+            return NotFound();
 
-    existingGame.GameDate = dto.GameDate;
-    existingGame.HomeTeamId = dto.HomeTeamId;
-    existingGame.AwayTeamId = dto.AwayTeamId;
-    existingGame.HomeScore = dto.HomeScore;
-    existingGame.AwayScore = dto.AwayScore;
-    existingGame.SeasonId = dto.SeasonId;
+        var sql = @"
+            UPDATE NFLGames
+            SET GameDate = {0},
+                HomeTeamId = {1},
+                AwayTeamId = {2},
+                HomeScore = {3},
+                AwayScore = {4},
+                SeasonId = {5}
+            WHERE Id = {6}";
 
-    await _context.SaveChangesAsync();
-    return NoContent();
-}
+        await _context.Database.ExecuteSqlRawAsync(sql,
+            dto.GameDate, dto.HomeTeamId, dto.AwayTeamId, dto.HomeScore, dto.AwayScore, dto.SeasonId, id);
+
+        return NoContent();
+    }
 
     // DELETE: api/AdminGames/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteGame(int id)
     {
-        var game = await _context.NFLGames.FindAsync(id);
-        if (game == null)
+        var existing = await _context.NFLGames.FindAsync(id);
+        if (existing == null)
             return NotFound();
 
-        _context.NFLGames.Remove(game);
-        await _context.SaveChangesAsync();
+        var sql = @"DELETE FROM NFLGames WHERE Id = {0}";
+
+        await _context.Database.ExecuteSqlRawAsync(sql, id);
+
         return NoContent();
     }
 
-//GET ALL
+    // GET ALL with DTO: api/AdminGames/all
     [HttpGet("all")]
-public async Task<ActionResult<IEnumerable<AdminGameDto>>> GetAllGames()
-{
-    return await _context.NFLGames
-        .Include(g => g.HomeTeam)
-        .Include(g => g.AwayTeam)
-        .Include(g => g.Season)
-        .Select(g => new AdminGameDto
-        {
-            Id = g.Id,
-            GameDate = g.GameDate,
-            HomeTeamName = g.HomeTeam.Name,
-            AwayTeamName = g.AwayTeam.Name,
-            HomeScore = g.HomeScore,
-            AwayScore = g.AwayScore,
-            SeasonYear = g.Season.Year
-        })
-        .ToListAsync();
-}
+    public async Task<ActionResult<IEnumerable<AdminGameDto>>> GetAllGames()
+    {
+        var sql = @"
+            SELECT g.Id, g.GameDate, ht.Name AS HomeTeamName, at.Name AS AwayTeamName, 
+                   g.HomeScore, g.AwayScore, s.Year AS SeasonYear
+            FROM NFLGames g
+            INNER JOIN Teams ht ON g.HomeTeamId = ht.Id
+            INNER JOIN Teams at ON g.AwayTeamId = at.Id
+            INNER JOIN Seasons s ON g.SeasonId = s.Id";
 
+        var gameDtos = await _context.Set<AdminGameDto>()
+            .FromSqlRaw(sql)
+            .ToListAsync();
 
-    // GET: api/AdminGames/{id} (specific DTO version)
+        return gameDtos;
+    }
+
+    // GET: api/AdminGames/dto/{id}
     [HttpGet("dto/{id}")]
     public async Task<ActionResult<AdminGameDto>> GetGameDto(int id)
     {
-        var game = await _context.NFLGames
-            .Include(g => g.HomeTeam)
-            .Include(g => g.AwayTeam)
-            .Include(g => g.Season)
-            .FirstOrDefaultAsync(g => g.Id == id);
+        var sql = @"
+            SELECT g.Id, g.GameDate, ht.Name AS HomeTeamName, at.Name AS AwayTeamName, 
+                   g.HomeScore, g.AwayScore, s.Year AS SeasonYear
+            FROM NFLGames g
+            INNER JOIN Teams ht ON g.HomeTeamId = ht.Id
+            INNER JOIN Teams at ON g.AwayTeamId = at.Id
+            INNER JOIN Seasons s ON g.SeasonId = s.Id
+            WHERE g.Id = {0}";
 
-        if (game == null)
+        var gameDto = await _context.Set<AdminGameDto>().FromSqlRaw(sql, id).FirstOrDefaultAsync();
+
+        if (gameDto == null)
             return NotFound();
 
-        return new AdminGameDto
-        {
-            // Map properties from NFLGame to AdminGameDto
-            Id = game.Id,
-            // Add other properties as needed
-        };
+        return gameDto;
     }
-
 
     // DELETE: api/AdminGames/dto/{id}
     [HttpDelete("dto/{id}")]
     public async Task<ActionResult> DeleteGameFromDto(int id)
     {
-        var game = await _context.NFLGames.FindAsync(id);
-        if (game == null)
+        var existing = await _context.NFLGames.FindAsync(id);
+        if (existing == null)
             return NotFound();
 
-        _context.NFLGames.Remove(game);
-        await _context.SaveChangesAsync();
+        var sql = @"DELETE FROM NFLGames WHERE Id = {0}";
+        await _context.Database.ExecuteSqlRawAsync(sql, id);
+
         return NoContent();
     }
 
@@ -157,13 +176,11 @@ public async Task<ActionResult<IEnumerable<AdminGameDto>>> GetAllGames()
     [HttpGet("dropdown-data")]
     public async Task<ActionResult> GetDropdownData()
     {
-        var teams = await _context.Teams
-            .Select(t => new AdminTeamDto { Id = t.Id, Name = t.Name })
-            .ToListAsync();
+        var teamsSql = @"SELECT Id, Name FROM Teams";
+        var seasonsSql = @"SELECT Id, Year FROM Seasons";
 
-        var seasons = await _context.Seasons
-            .Select(s => new AdminSeasonDto { Id = s.Id, Year = s.Year })
-            .ToListAsync();
+        var teams = await _context.Set<AdminTeamDto>().FromSqlRaw(teamsSql).ToListAsync();
+        var seasons = await _context.Set<AdminSeasonDto>().FromSqlRaw(seasonsSql).ToListAsync();
 
         return Ok(new { teams, seasons });
     }

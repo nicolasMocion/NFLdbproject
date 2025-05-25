@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZOPvA6PH/l4QQN4HyufYrAXR0TWku8vrOX6Vs683/64=",
+  "Hash": "bh9F1rADncMxnsPnb5r0gQRURigkRtAcBb12WeanoMA=",
   "Source": "EspnBackend",
   "BasePath": "_content/EspnBackend",
   "Mode": "Default",
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "twt3eamdpi",
-      "Integrity": "LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg=",
+      "Fingerprint": "fh4vdxxhff",
+      "Integrity": "c8nga6b7zIItneh8NBTfXg/ZMSZzLsyKAXkewl/g94k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/css/style.css"
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xh9pq8utey",
-      "Integrity": "VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0=",
+      "Fingerprint": "q8ww9e1oyp",
+      "Integrity": "xuMRdSn17fiIlBitMJLAhIDV3NwaO5vj5jr7wXFy7Rk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/edit-games.html"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b7y2dzgfk8",
-      "Integrity": "WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0=",
+      "Fingerprint": "jaemalyver",
+      "Integrity": "JXDcz+ljI5/Ut3CSm4N2oWhrh1mmd9zaWiqFD1LdQgc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/edit-players.html"
@@ -311,12 +311,12 @@
       "OriginalItemSpec": "wwwroot/Frontend/public/edit-playerStats.html"
     },
     {
-      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadium.html",
+      "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadiums.html",
       "SourceId": "EspnBackend",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/nicolas/EspnBackend/wwwroot/",
       "BasePath": "_content/EspnBackend",
-      "RelativePath": "Frontend/public/edit-stadium#[.{fingerprint}]?.html",
+      "RelativePath": "Frontend/public/edit-stadiums#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -329,7 +329,7 @@
       "Integrity": "FWR/FewmVsqQvJUOuR30EMIxtUwCR1Rd/tPWpoFhYrg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Frontend/public/edit-stadium.html"
+      "OriginalItemSpec": "wwwroot/Frontend/public/edit-stadiums.html"
     },
     {
       "Identity": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teams.html",
@@ -346,8 +346,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xytleu1o2n",
-      "Integrity": "B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4=",
+      "Fingerprint": "c98y2qrlu3",
+      "Integrity": "UDjMCdoAk5k8YgzMYBEmZu6Anp4wLWlmm1f/L1gf5+Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/edit-teams.html"
@@ -1354,8 +1354,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vz52ambo6q",
-      "Integrity": "JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek=",
+      "Fingerprint": "m2wluc8evt",
+      "Integrity": "Ytyc1Gsg2hTsF4S3YPJmjA4S39z1nTRhn64tIN1YNko=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/login.html"
@@ -1909,7 +1909,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7364"
+          "Value": "13410"
         },
         {
           "Name": "Content-Type",
@@ -1917,11 +1917,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg=\""
+          "Value": "\"c8nga6b7zIItneh8NBTfXg/ZMSZzLsyKAXkewl/g94k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 08:08:55 GMT"
+          "Value": "Sun, 25 May 2025 00:27:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1931,12 +1931,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg="
+          "Value": "sha256-c8nga6b7zIItneh8NBTfXg/ZMSZzLsyKAXkewl/g94k="
         }
       ]
     },
     {
-      "Route": "Frontend/public/css/style.twt3eamdpi.css",
+      "Route": "Frontend/public/css/style.fh4vdxxhff.css",
       "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/css/style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1946,7 +1946,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7364"
+          "Value": "13410"
         },
         {
           "Name": "Content-Type",
@@ -1954,11 +1954,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg=\""
+          "Value": "\"c8nga6b7zIItneh8NBTfXg/ZMSZzLsyKAXkewl/g94k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 08:08:55 GMT"
+          "Value": "Sun, 25 May 2025 00:27:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1968,7 +1968,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "twt3eamdpi"
+          "Value": "fh4vdxxhff"
         },
         {
           "Name": "label",
@@ -1976,7 +1976,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LZDJ4g7Qa2F/VyF4Ill3dz77iOlMWAFEHJcxE6UiIxg="
+          "Value": "sha256-c8nga6b7zIItneh8NBTfXg/ZMSZzLsyKAXkewl/g94k="
         }
       ]
     },
@@ -2319,7 +2319,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10523"
+          "Value": "11615"
         },
         {
           "Name": "Content-Type",
@@ -2327,11 +2327,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0=\""
+          "Value": "\"xuMRdSn17fiIlBitMJLAhIDV3NwaO5vj5jr7wXFy7Rk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 06:15:43 GMT"
+          "Value": "Sun, 25 May 2025 00:43:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2341,12 +2341,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0="
+          "Value": "sha256-xuMRdSn17fiIlBitMJLAhIDV3NwaO5vj5jr7wXFy7Rk="
         }
       ]
     },
     {
-      "Route": "Frontend/public/edit-games.xh9pq8utey.html",
+      "Route": "Frontend/public/edit-games.q8ww9e1oyp.html",
       "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-games.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2356,7 +2356,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10523"
+          "Value": "11615"
         },
         {
           "Name": "Content-Type",
@@ -2364,11 +2364,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0=\""
+          "Value": "\"xuMRdSn17fiIlBitMJLAhIDV3NwaO5vj5jr7wXFy7Rk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 06:15:43 GMT"
+          "Value": "Sun, 25 May 2025 00:43:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2378,7 +2378,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xh9pq8utey"
+          "Value": "q8ww9e1oyp"
         },
         {
           "Name": "label",
@@ -2386,7 +2386,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VZbY098EL7tKH1PiZfsKo9Sk1OcH1NrpTz+iuymSae0="
+          "Value": "sha256-xuMRdSn17fiIlBitMJLAhIDV3NwaO5vj5jr7wXFy7Rk="
         }
       ]
     },
@@ -2473,51 +2473,6 @@
       ]
     },
     {
-      "Route": "Frontend/public/edit-players.b7y2dzgfk8.html",
-      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-players.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10189"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 13:13:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b7y2dzgfk8"
-        },
-        {
-          "Name": "label",
-          "Value": "Frontend/public/edit-players.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0="
-        }
-      ]
-    },
-    {
       "Route": "Frontend/public/edit-players.html",
       "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-players.html",
       "Selectors": [],
@@ -2528,7 +2483,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10189"
+          "Value": "9966"
         },
         {
           "Name": "Content-Type",
@@ -2536,11 +2491,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0=\""
+          "Value": "\"JXDcz+ljI5/Ut3CSm4N2oWhrh1mmd9zaWiqFD1LdQgc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 13:13:08 GMT"
+          "Value": "Sun, 25 May 2025 03:33:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2550,7 +2505,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WY2Bf5IpZmKG//RC0buqAn1LrmK/uPOW8efH0JMywi0="
+          "Value": "sha256-JXDcz+ljI5/Ut3CSm4N2oWhrh1mmd9zaWiqFD1LdQgc="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-players.jaemalyver.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-players.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9966"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXDcz+ljI5/Ut3CSm4N2oWhrh1mmd9zaWiqFD1LdQgc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 03:33:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jaemalyver"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-players.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXDcz+ljI5/Ut3CSm4N2oWhrh1mmd9zaWiqFD1LdQgc="
         }
       ]
     },
@@ -2637,8 +2637,8 @@
       ]
     },
     {
-      "Route": "Frontend/public/edit-stadium.html",
-      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadium.html",
+      "Route": "Frontend/public/edit-stadiums.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadiums.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2674,8 +2674,8 @@
       ]
     },
     {
-      "Route": "Frontend/public/edit-stadium.vbgd0y4wtv.html",
-      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadium.html",
+      "Route": "Frontend/public/edit-stadiums.vbgd0y4wtv.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-stadiums.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2710,11 +2710,56 @@
         },
         {
           "Name": "label",
-          "Value": "Frontend/public/edit-stadium.html"
+          "Value": "Frontend/public/edit-stadiums.html"
         },
         {
           "Name": "integrity",
           "Value": "sha256-FWR/FewmVsqQvJUOuR30EMIxtUwCR1Rd/tPWpoFhYrg="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend/public/edit-teams.c98y2qrlu3.html",
+      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teams.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8647"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UDjMCdoAk5k8YgzMYBEmZu6Anp4wLWlmm1f/L1gf5+Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 02:48:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c98y2qrlu3"
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend/public/edit-teams.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UDjMCdoAk5k8YgzMYBEmZu6Anp4wLWlmm1f/L1gf5+Y="
         }
       ]
     },
@@ -2729,7 +2774,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8664"
+          "Value": "8647"
         },
         {
           "Name": "Content-Type",
@@ -2737,11 +2782,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4=\""
+          "Value": "\"UDjMCdoAk5k8YgzMYBEmZu6Anp4wLWlmm1f/L1gf5+Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 08:41:10 GMT"
+          "Value": "Sun, 25 May 2025 02:48:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2751,52 +2796,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4="
-        }
-      ]
-    },
-    {
-      "Route": "Frontend/public/edit-teams.xytleu1o2n.html",
-      "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teams.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8664"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 08:41:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xytleu1o2n"
-        },
-        {
-          "Name": "label",
-          "Value": "Frontend/public/edit-teams.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-B1+XUSuT3C33QIn892dKZw+NMiZxUooWNj4wqB2/NC4="
+          "Value": "sha256-UDjMCdoAk5k8YgzMYBEmZu6Anp4wLWlmm1f/L1gf5+Y="
         }
       ]
     },
@@ -6665,7 +6665,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8138"
+          "Value": "6803"
         },
         {
           "Name": "Content-Type",
@@ -6673,11 +6673,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek=\""
+          "Value": "\"Ytyc1Gsg2hTsF4S3YPJmjA4S39z1nTRhn64tIN1YNko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 16:15:06 GMT"
+          "Value": "Sun, 25 May 2025 00:04:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6687,12 +6687,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek="
+          "Value": "sha256-Ytyc1Gsg2hTsF4S3YPJmjA4S39z1nTRhn64tIN1YNko="
         }
       ]
     },
     {
-      "Route": "Frontend/public/login.vz52ambo6q.html",
+      "Route": "Frontend/public/login.m2wluc8evt.html",
       "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/login.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6702,7 +6702,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8138"
+          "Value": "6803"
         },
         {
           "Name": "Content-Type",
@@ -6710,11 +6710,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek=\""
+          "Value": "\"Ytyc1Gsg2hTsF4S3YPJmjA4S39z1nTRhn64tIN1YNko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 24 May 2025 16:15:06 GMT"
+          "Value": "Sun, 25 May 2025 00:04:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6724,7 +6724,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vz52ambo6q"
+          "Value": "m2wluc8evt"
         },
         {
           "Name": "label",
@@ -6732,7 +6732,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-JWMKqbrlL6nCvZEKxYFQU+lQTuouu2lArVq1PoeSyek="
+          "Value": "sha256-Ytyc1Gsg2hTsF4S3YPJmjA4S39z1nTRhn64tIN1YNko="
         }
       ]
     },
