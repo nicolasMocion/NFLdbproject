@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stadiums - NFL HERO</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h1 class="text-primary m-0">NFL HERO</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a href="login.html" class="nav-item nav-link">Login</a>
+            <a href="teams.html" class="nav-item nav-link">Teams</a>
+            <a href="Players.html" class="nav-item nav-link">Players</a>
+            <a href="teamTtiles.html" class="nav-item nav-link">Titles</a>
+            <a href="stadiums.html" class="nav-item nav-link active">Stadiums</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+            </div>
+        </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <div class="container mt-5 pt-5">
+
+      <div class="mb-4 row text-light"> 
+        <div class="col-md-3">
+          <label>City</label>
+          <select id="filter-city" class="form-select"><option value="">All</option></select>
+        </div>
+      </div>
+        
+      <div class="mb-3">
+        <label for="sort-select" class="form-label text-light">Sort By:</label>
+        <select id="sort-select" class="form-select w-auto d-inline-block">
+          <option value="name">Name</option>
+          <option value="capacity">Capacity</option>
+          <option value="city">City</option>
+        </select>
+    
+        <button id="asc-btn" class="btn btn-primary ms-2">Asc</button>
+        <button id="desc-btn" class="btn btn-secondary ms-1">Desc</button>
+      </div>
+    
+      <!-- Stadiums table -->
+      <h4 class="mt-5">Stadiums List</h4>
+      <table id="entity-table" class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Capacity</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      
+  </div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script>
+    let currentOrder = "asc";
+
+    function getFilters() {
+      return {
+        city: document.getElementById('filter-city').value,
+        sortBy: document.getElementById('sort-select').value,
+        order: currentOrder
+      };
+    }
+
+    async function loadStadiumsWithFilters() {
+      const query = getFilters();
+      const params = new URLSearchParams(query).toString();
+      const response = await fetch(`http://localhost:5149/api/stadiums/filter?${params}`);
+      const stadiums = await response.json();
+
+      const tbody = document.querySelector('#entity-table tbody');
+      tbody.innerHTML = '';
+
+      stadiums.forEach(stadium => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${stadium.name}</td>
+          <td>${stadium.capacity}</td>
+          <td>${stadium.cityName}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Attach event listeners to existing filter IDs
+    ['filter-city', 'sort-select'].forEach(id => {
+      document.getElementById(id).addEventListener('change', loadStadiumsWithFilters);
+    });
+
+    document.getElementById('asc-btn').addEventListener('click', () => {
+      currentOrder = "asc";
+      loadStadiumsWithFilters();
+    });
+
+    document.getElementById('desc-btn').addEventListener('click', () => {
+      currentOrder = "desc";
+      loadStadiumsWithFilters();
+    });
+
+    async function populateDropdowns() {
+      // Populate city dropdown
+      const select = document.getElementById('filter-city');
+      const response = await fetch(`http://localhost:5149/api/stadiums/cities`);
+      const values = await response.json();
+      values.forEach(value => {
+        const option = document.createElement('option');
+        option.value = value;
+        option.textContent = value;
+        select.appendChild(option);
+      });
+    }
+
+    window.onload = async () => {
+      await populateDropdowns();
+      loadStadiumsWithFilters();
+    };
+  </script>
+</body>
+</html>

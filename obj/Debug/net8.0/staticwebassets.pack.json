@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Frontend/public/adminDashboard.html"
     },
     {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/calendarioNFL2025.html",
+      "PackagePath": "staticwebassets/Frontend/public/calendarioNFL2025.html"
+    },
+    {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/coachHistory.html",
       "PackagePath": "staticwebassets/Frontend/public/coachHistory.html"
     },
@@ -263,6 +267,10 @@
     {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/players.html",
       "PackagePath": "staticwebassets/Frontend/public/players.html"
+    },
+    {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/stadiums.html",
+      "PackagePath": "staticwebassets/Frontend/public/stadiums.html"
     },
     {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/stats.html",

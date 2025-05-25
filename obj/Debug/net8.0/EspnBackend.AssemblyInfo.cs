@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EspnBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f45e6d116d208e990a95484a26d549426bf2265c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5eb3e2b55a36f792b5992468093a4ec8169e50a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("EspnBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EspnBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

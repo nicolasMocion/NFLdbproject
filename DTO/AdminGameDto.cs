@@ -1,7 +1,10 @@
-// AdminGameDtos.cs
+using System;
+using Microsoft.EntityFrameworkCore;
+
 namespace EspnBackend.DTO
 {
     // For listing games in admin view
+    [Keyless]
     public class AdminGameDto
     {
         public int Id { get; set; }
@@ -28,12 +31,14 @@ namespace EspnBackend.DTO
     }
 
     // For dropdowns
+    [Keyless]
     public class AdminTeamDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
     }
 
+    [Keyless]
     public class AdminSeasonDto
     {
         public int Id { get; set; }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calendario NFL 2025 - NFL Hero</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .calendar-table th, .calendar-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .calendar-table th {
+            background: var(--primary, #013369);
+            color: #fff;
+        }
+        .event {
+            border-radius: 6px;
+            padding: 3px 6px;
+            margin: 2px 0;
+            font-size: 0.95em;
+        }
+        .event.gw {background: #d1e7fd; color: #013369;}
+        .event.sbx {background: #ffd700; color: #7c4700; font-weight: bold;}
+        .event.draft {background: #A5ACAF; color: #013369;}
+        .event.pre {background: #D50A0A; color: #fff;}
+        .event.po {background: #013369; color: #fff;}
+        .legend-box {display: inline-block; width: 18px; height: 18px; border-radius: 4px; margin-right: 6px; margin-bottom: -4px;}
+        .legend-gw {background: #d1e7fd; border: 1px solid #013369;}
+        .legend-po {background: #013369;}
+        .legend-pre {background: #D50A0A;}
+        .legend-sbx {background: #ffd700; border: 1px solid #7c4700;}
+        .legend-draft {background: #A5ACAF;}
+        .calendar-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary, #013369);
+            letter-spacing: 1px;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0">NFL HERO</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="teams.html" class="nav-item nav-link">Equipos</a>
+                <a href="Players.html" class="nav-item nav-link">Jugadores</a>
+                <a href="teamTtiles.html" class="nav-item nav-link">Títulos</a>
+                <a href="nfl-calendar-2025.html" class="nav-item nav-link active">Calendario NFL 2025</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5 pt-5">
+        <div class="text-center">
+            <div class="calendar-title mb-0 mt-3">Calendario NFL 2025</div>
+            <p class="mb-3">Consulta las semanas de juego, Draft, Playoffs y Super Bowl de la temporada 2025.</p>
+            <div class="mb-4">
+                <span class="legend-box legend-gw"></span> Gameweek
+                <span class="legend-box legend-pre"></span> Pretemporada
+                <span class="legend-box legend-po"></span> Playoffs
+                <span class="legend-box legend-sbx"></span> Super Bowl
+                <span class="legend-box legend-draft"></span> NFL Draft
+            </div>
+        </div>
+
+        <!-- Calendar Table -->
+        <div class="table-responsive">
+            <table class="table table-bordered calendar-table">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Fechas Destacadas</th>
+                        <th>Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABRIL</td>
+                        <td>24-26 de Abril</td>
+                        <td><span class="event draft"><i class="fas fa-clipboard-list"></i> NFL Draft 2025 (Green Bay, WI)</span></td>
+                    </tr>
+                    <tr>
+                        <td>AGOSTO</td>
+                        <td>7-28 de Agosto (Jueves)</td>
+                        <td><span class="event pre"><i class="fas fa-football-ball"></i> Pretemporada (4 semanas)</span></td>
+                    </tr>
+                    <tr>
+                        <td>SEPTIEMBRE</td>
+                        <td>4-7 de Septiembre</td>
+                        <td><span class="event gw"><i class="fas fa-flag-checkered"></i> Kickoff: Gameweek 1</span></td>
+                    </tr>
+                    <tr>
+                        <td>SEPTIEMBRE - DICIEMBRE</td>
+                        <td>4 Sep - 29 Dic</td>
+                        <td>
+                            <span class="event gw"><i class="fas fa-calendar-week"></i> Gameweeks 1-18<br>(Cada semana: jueves a lunes)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ENERO 2026</td>
+                        <td>3-18 de Enero</td>
+                        <td>
+                            <span class="event po"><i class="fas fa-trophy"></i> Playoffs (Wild Card, Divisional, Conference)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ENERO 2026</td>
+                        <td>25 de Enero</td>
+                        <td>
+                            <span class="event po"><i class="fas fa-star"></i> Pro Bowl</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FEBRERO 2026</td>
+                        <td>8 de Febrero</td>
+                        <td>
+                            <span class="event sbx"><i class="fas fa-football-ball"></i> Super Bowl LX (Levi's Stadium, Santa Clara, CA)</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center mt-4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Super_Bowl_LX.png/330px-Super_Bowl_LX.png" style="max-width: 500px; width: 100%; border-radius: 12px; box-shadow: 0 0 15px #01336933;" alt="NFL Stadium">
+            <p class="mt-3 text-muted small">Fechas y eventos sujetos a cambios oficiales de la NFL.</p>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

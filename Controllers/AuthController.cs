@@ -81,7 +81,7 @@ public IActionResult Login([FromBody] LoginRequest request)
     _context.UserLoginHistories.Add(loginLog);
     _context.SaveChanges();
 
-    return Ok(new { success = true, role = "User", redirectUrl = "/home.html" });
+    return Ok(new { success = true, role = "User", redirectUrl = "/userDashboard.html" });
 }
 
     private string ComputeHash(string input)
@@ -92,7 +92,7 @@ public IActionResult Login([FromBody] LoginRequest request)
         return Convert.ToBase64String(hash);
     }
 }
-
+ 
 public class LoginRequest
 {
     public string Username { get; set; } = "";

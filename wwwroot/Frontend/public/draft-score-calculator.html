@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NFL Draft Score Calculator - NFL Hero</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="NFL Draft, Score Calculator, NFL Hero">
+    <meta name="description" content="Calcula y compara el puntaje de tu draft NFL 2025.">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap & Template Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .draft-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary, #013369);
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: 1px;
+        }
+        .score-result {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary, #D50A0A);
+        }
+        .score-excellent { color: #18b84c; }
+        .score-good { color: #007bff; }
+        .score-average { color: #ffc107; }
+        .score-poor { color: #d9534f; }
+        .draft-form label {
+            color: var(--primary, #013369);
+            font-weight: 600;
+        }
+        .result-details {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0">NFL HERO</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
+                <a href="teams.html" class="nav-item nav-link">Equipos</a>
+                <a href="Players.html" class="nav-item nav-link">Jugadores</a>
+                <a href="teamTtiles.html" class="nav-item nav-link">Títulos</a>
+                <a href="nfl-calendar-2025.html" class="nav-item nav-link">Calendario NFL 2025</a>
+                <a href="draft-score-calculator.html" class="nav-item nav-link active">Draft Score</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5 pt-5">
+        <div class="text-center mt-3">
+            <div class="draft-title">Calculadora de Puntaje de Draft NFL 2025</div>
+            <p>Introduce los resultados de tu draft para calcular tu puntaje y comparar con otros equipos.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <form id="draftForm" class="draft-form shadow rounded p-4 bg-light">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="team" class="form-label">Equipo</label>
+                            <select id="team" class="form-select" required>
+                                <option value="">Selecciona tu equipo</option>
+                                <option value="ARI">Arizona Cardinals</option>
+                                <option value="ATL">Atlanta Falcons</option>
+                                <option value="BAL">Baltimore Ravens</option>
+                                <option value="BUF">Buffalo Bills</option>
+                                <option value="CAR">Carolina Panthers</option>
+                                <option value="CHI">Chicago Bears</option>
+                                <option value="CIN">Cincinnati Bengals</option>
+                                <option value="CLE">Cleveland Browns</option>
+                                <option value="DAL">Dallas Cowboys</option>
+                                <option value="DEN">Denver Broncos</option>
+                                <option value="DET">Detroit Lions</option>
+                                <option value="GB">Green Bay Packers</option>
+                                <option value="HOU">Houston Texans</option>
+                                <option value="IND">Indianapolis Colts</option>
+                                <option value="JAX">Jacksonville Jaguars</option>
+                                <option value="KC">Kansas City Chiefs</option>
+                                <option value="LV">Las Vegas Raiders</option>
+                                <option value="LAC">Los Angeles Chargers</option>
+                                <option value="LAR">Los Angeles Rams</option>
+                                <option value="MIA">Miami Dolphins</option>
+                                <option value="MIN">Minnesota Vikings</option>
+                                <option value="NE">New England Patriots</option>
+                                <option value="NO">New Orleans Saints</option>
+                                <option value="NYG">New York Giants</option>
+                                <option value="NYJ">New York Jets</option>
+                                <option value="PHI">Philadelphia Eagles</option>
+                                <option value="PIT">Pittsburgh Steelers</option>
+                                <option value="SF">San Francisco 49ers</option>
+                                <option value="SEA">Seattle Seahawks</option>
+                                <option value="TB">Tampa Bay Buccaneers</option>
+                                <option value="TEN">Tennessee Titans</option>
+                                <option value="WAS">Washington Commanders</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="picks" class="form-label">Número de selecciones (total)</label>
+                            <input type="number" id="picks" class="form-control" min="1" max="15" required placeholder="Ej: 7">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-6 col-md-3">
+                            <label class="form-label">Jugadores 1ra Ronda</label>
+                            <input type="number" id="round1" class="form-control" min="0" max="5" value="0">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="form-label">Jugadores 2da Ronda</label>
+                            <input type="number" id="round2" class="form-control" min="0" max="5" value="0">
+                        </div>
+                        <div class="col-6 col-md-3 mt-2 mt-md-0">
+                            <label class="form-label">Jugadores 3ra Ronda</label>
+                            <input type="number" id="round3" class="form-control" min="0" max="5" value="0">
+                        </div>
+                        <div class="col-6 col-md-3 mt-2 mt-md-0">
+                            <label class="form-label">Jugadores Día 3+</label>
+                            <input type="number" id="laterounds" class="form-control" min="0" max="10" value="0">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-md-6">
+                            <label for="star" class="form-label">
+                                ¿Cuántos picks fueron jugadores 5 estrellas? <i class="fas fa-star text-warning"></i>
+                            </label>
+                            <input type="number" id="star" class="form-control" min="0" max="10" value="0">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="needs" class="form-label">
+                                Picks que cubren necesidades clave <i class="fas fa-clipboard-check text-success"></i>
+                            </label>
+                            <input type="number" id="needs" class="form-control" min="0" max="10" value="0">
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-calculator"></i> Calcular Puntaje</button>
+                    </div>
+                </form>
+                <div id="scoreResult" class="text-center mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function getGrade(score) {
+            if(score >= 85) return {text: "¡Excelente Draft! 🏆", class: "score-excellent"};
+            if(score >= 70) return {text: "Muy buen trabajo 👏", class: "score-good"};
+            if(score >= 55) return {text: "Aprobado, pero mejorable", class: "score-average"};
+            return {text: "Draft flojo 😬", class: "score-poor"};
+        }
+
+        document.getElementById('draftForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const team = document.getElementById('team').value;
+            const picks = parseInt(document.getElementById('picks').value) || 0;
+            const round1 = parseInt(document.getElementById('round1').value) || 0;
+            const round2 = parseInt(document.getElementById('round2').value) || 0;
+            const round3 = parseInt(document.getElementById('round3').value) || 0;
+            const laterounds = parseInt(document.getElementById('laterounds').value) || 0;
+            const star = parseInt(document.getElementById('star').value) || 0;
+            const needs = parseInt(document.getElementById('needs').value) || 0;
+
+            // Simple scoring logic (total 100 max, tune as desired)
+            let total = 0;
+            total += round1 * 15;        // 1st round picks are premium
+            total += round2 * 10;
+            total += round3 * 7;
+            total += laterounds * 3;     // late rounders are less valuable
+            total += star * 6;           // 5-star prospects
+            total += needs * 5;          // Team needs covered
+
+            // Bonus for many picks
+            if (picks >= 10) total += 7;
+            if (picks <= 4) total -= 5;
+
+            // Clamp to [0, 100]
+            if (total > 100) total = 100;
+            if (total < 0) total = 0;
+
+            // Grade
+            const grade = getGrade(total);
+
+            // Result output
+            let html = `
+                <div class="score-result ${grade.class}">Puntaje: ${total}/100</div>
+                <div class="result-details mb-2">${grade.text}</div>
+                <div class="result-details text-muted">
+                    <i class="fas fa-shield-alt"></i> Equipo: <b>${document.getElementById('team').selectedOptions[0].text}</b><br>
+                    Picks: ${picks} &middot; 1ra ronda: ${round1} &middot; 2da ronda: ${round2} &middot; 3ra ronda: ${round3} &middot; Día 3+: ${laterounds} <br>
+                    5 estrellas: ${star} &middot; Picks que cubren necesidades: ${needs}
+                </div>
+            `;
+            document.getElementById('scoreResult').innerHTML = html;
+        });
+    </script>
+</body>
+</html>

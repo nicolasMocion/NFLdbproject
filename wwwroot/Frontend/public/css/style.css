@@ -150,6 +150,17 @@ h6,
 }
 
 
+/*** Filter Dropdown Labels - NFL Themed ***/
+.mb-4.row.text-light label,
+.mb-4.row label,
+.form-label,
+label {
+    color: var(--primary) !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+/* If you want all <label> everywhere NFL blue, use just 'label { ... }' */
+
 /*** Navbar ***/
 
 .navbar .dropdown-toggle::after {
