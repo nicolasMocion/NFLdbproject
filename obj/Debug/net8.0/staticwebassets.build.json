@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9Jp8e8/HZdBpbGV0f2/GuoFomS0BFgrF/SAdRkNHjO4=",
+  "Hash": "Q2d02z0zl3SUXh4jQTAlOj850huv6zBqJ7UzS2Jf6U8=",
   "Source": "EspnBackend",
   "BasePath": "_content/EspnBackend",
   "Mode": "Default",
@@ -409,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "81ids7ibbu",
-      "Integrity": "dGvvt49dWifJb5Kh7IFR3Me2/+MPCfaR0bf3xNGt2G0=",
+      "Fingerprint": "4lt1owfj2y",
+      "Integrity": "CJTn/RAJKGhQNSSz5vYJsvWsANbrxuRhD2WYd8ODbNE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Frontend/public/edit-teamTitles.html"
@@ -3028,7 +3028,7 @@
       ]
     },
     {
-      "Route": "Frontend/public/edit-teamTitles.81ids7ibbu.html",
+      "Route": "Frontend/public/edit-teamTitles.4lt1owfj2y.html",
       "AssetFile": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-teamTitles.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3038,7 +3038,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8711"
+          "Value": "9059"
         },
         {
           "Name": "Content-Type",
@@ -3046,11 +3046,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dGvvt49dWifJb5Kh7IFR3Me2/+MPCfaR0bf3xNGt2G0=\""
+          "Value": "\"CJTn/RAJKGhQNSSz5vYJsvWsANbrxuRhD2WYd8ODbNE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 04:36:24 GMT"
+          "Value": "Tue, 27 May 2025 14:47:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3060,7 +3060,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "81ids7ibbu"
+          "Value": "4lt1owfj2y"
         },
         {
           "Name": "label",
@@ -3068,7 +3068,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dGvvt49dWifJb5Kh7IFR3Me2/+MPCfaR0bf3xNGt2G0="
+          "Value": "sha256-CJTn/RAJKGhQNSSz5vYJsvWsANbrxuRhD2WYd8ODbNE="
         }
       ]
     },
@@ -3083,7 +3083,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8711"
+          "Value": "9059"
         },
         {
           "Name": "Content-Type",
@@ -3091,11 +3091,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dGvvt49dWifJb5Kh7IFR3Me2/+MPCfaR0bf3xNGt2G0=\""
+          "Value": "\"CJTn/RAJKGhQNSSz5vYJsvWsANbrxuRhD2WYd8ODbNE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 04:36:24 GMT"
+          "Value": "Tue, 27 May 2025 14:47:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3105,7 +3105,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dGvvt49dWifJb5Kh7IFR3Me2/+MPCfaR0bf3xNGt2G0="
+          "Value": "sha256-CJTn/RAJKGhQNSSz5vYJsvWsANbrxuRhD2WYd8ODbNE="
         }
       ]
     },

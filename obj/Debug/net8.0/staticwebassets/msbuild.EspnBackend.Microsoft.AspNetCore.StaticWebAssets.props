@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>81ids7ibbu</Fingerprint>
-      <Integrity>dGvvt49dWifJb5Kh7IFR3Me2/+MPCfaR0bf3xNGt2G0=</Integrity>
+      <Fingerprint>4lt1owfj2y</Fingerprint>
+      <Integrity>CJTn/RAJKGhQNSSz5vYJsvWsANbrxuRhD2WYd8ODbNE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Frontend\public\edit-teamTitles.html'))</OriginalItemSpec>

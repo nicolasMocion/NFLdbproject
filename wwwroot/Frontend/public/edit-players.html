@@ -97,20 +97,11 @@
 
     <script>
         const baseUrl = 'http://localhost:5149/api/AdminPlayers';
-        
-        function showAlert(message, type) {
-            const alertArea = document.getElementById('alertArea');
-            alertArea.innerHTML = `<div class="alert alert-${type} alert-dismissible fade show" role="alert">
-                ${message}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>`;
-            setTimeout(() => { alertArea.innerHTML = ''; }, 3000);
-        }
-        
+
         document.addEventListener('DOMContentLoaded', () => {
             loadPlayers();
             loadDropdowns();
-        
+
             document.getElementById('playerForm').addEventListener('submit', savePlayer);
             document.getElementById('resetForm').addEventListener('click', () => {
                 document.getElementById('playerForm').reset();
@@ -118,124 +109,84 @@
                 document.getElementById('formTitle').textContent = 'Add/Edit Player';
             });
         });
-        
+
         function loadPlayers() {
-            const tbody = document.getElementById('playersTableBody');
-            tbody.innerHTML = `<tr><td colspan="6" class="text-center">Loading players...</td></tr>`;
             fetch(`${baseUrl}/all`)
                 .then(res => res.json())
                 .then(players => {
-                    if (!players.length) {
-                        tbody.innerHTML = `<tr><td colspan="6" class="text-center">No players found.</td></tr>`;
-                        return;
-                    }
+                    const tbody = document.getElementById('playersTableBody');
                     tbody.innerHTML = players.map(p => `
                         <tr>
                             <td>${p.name}</td>
                             <td>${p.position}</td>
-                            <td>${p.teamName ?? ''}</td>
-                            <td>${p.collegeName ?? ''}</td>
-                            <td>${p.cityName ?? ''}</td>
+                            <td>${p.teamName}</td>
+                            <td>${p.collegeName}</td>
+                            <td>${p.cityName}</td>
                             <td>
-                                <button class="btn btn-warning btn-sm me-1" aria-label="Edit Player" onclick='editPlayer(${JSON.stringify(p)})'>Edit</button>
-                                <button class="btn btn-danger btn-sm" aria-label="Delete Player" onclick="deletePlayer(${p.id})">Delete</button>
+                                <button class="btn btn-warning btn-sm me-1" onclick='editPlayer(${JSON.stringify(p)})'>Edit</button>
+                                <button class="btn btn-danger btn-sm" onclick="deletePlayer(${p.id})">Delete</button>
                             </td>
                         </tr>
                     `).join('');
-                }).catch(() => {
-                    tbody.innerHTML = `<tr><td colspan="6" class="text-center text-danger">Failed to load players.</td></tr>`;
                 });
         }
-        
+
         function loadDropdowns() {
             fetch(`${baseUrl}/dropdown-data`)
                 .then(res => res.json())
                 .then(data => {
-                    const teamSelect = document.getElementById('teamId');
-                    const collegeSelect = document.getElementById('collegeId');
-                    const citySelect = document.getElementById('HomeTownCityId');
-                    // reset dropdowns
-                    teamSelect.innerHTML = '<option value="">Select Team</option>';
-                    collegeSelect.innerHTML = '<option value="">Select College</option>';
-                    citySelect.innerHTML = '<option value="">Select Hometown</option>';
-        
-                    data.teams.forEach(t => {
-                        teamSelect.innerHTML += `<option value="${t.id}">${t.name}</option>`;
-                    });
-                    data.colleges.forEach(c => {
-                        collegeSelect.innerHTML += `<option value="${c.id}">${c.name}</option>`;
-                    });
-                    data.cities.forEach(c => {
-                        citySelect.innerHTML += `<option value="${c.id}">${c.name}</option>`;
-                    });
+                    const teamOptions = data.teams.map(t => `<option value="${t.id}">${t.name}</option>`).join('');
+                    const collegeOptions = data.colleges.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+                    const cityOptions = data.cities.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+
+                    document.getElementById('teamId').innerHTML = teamOptions;
+                    document.getElementById('collegeId').innerHTML = collegeOptions;
+                    document.getElementById('HomeTownCityId').innerHTML = cityOptions;
                 });
         }
-        
+
         function savePlayer(event) {
             event.preventDefault();
-            const saveBtn = document.getElementById('saveBtn');
-            saveBtn.disabled = true;
-        
             const id = document.getElementById('playerId').value;
             const dto = {
-                name: document.getElementById('playerName').value.trim(),
-                position: document.getElementById('playerPosition').value.trim(),
+                name: document.getElementById('playerName').value,
+                position: document.getElementById('playerPosition').value,
                 collegeId: parseInt(document.getElementById('collegeId').value),
                 teamId: parseInt(document.getElementById('teamId').value),
                 homeTownCityId: parseInt(document.getElementById('HomeTownCityId').value)
             };
-        
+
             const method = id ? 'PUT' : 'POST';
             const url = id ? `${baseUrl}/dto/${id}` : `${baseUrl}/dto`;
-        
+
             fetch(url, {
                 method,
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(dto)
-            }).then(resp => {
-                if (resp.ok) {
-                    showAlert('Player saved successfully!', 'success');
-                    document.getElementById('playerForm').reset();
-                    document.getElementById('playerId').value = '';
-                    document.getElementById('formTitle').textContent = 'Add/Edit Player';
-                    loadPlayers();
-                } else {
-                    resp.text().then(msg => showAlert('Error: ' + msg, 'danger'));
-                }
-            }).catch(() => {
-                showAlert('Network or server error while saving.', 'danger');
-            }).finally(() => {
-                saveBtn.disabled = false;
+            }).then(() => {
+                loadPlayers();
+                document.getElementById('playerForm').reset();
+                document.getElementById('playerId').value = '';
+                document.getElementById('formTitle').textContent = 'Add/Edit Player';
             });
         }
-        
+
         function editPlayer(p) {
             document.getElementById('playerId').value = p.id;
             document.getElementById('playerName').value = p.name;
             document.getElementById('playerPosition').value = p.position;
-            document.getElementById('teamId').value = p.teamId ?? '';
-            document.getElementById('collegeId').value = p.collegeId ?? '';
-            document.getElementById('HomeTownCityId').value = p.homeTownCityId ?? '';
+            document.getElementById('teamId').value = p.teamId;
+            document.getElementById('collegeId').value = p.collegeId;
+            document.getElementById('HomeTownCityId').value = p.homeTownCityId;
             document.getElementById('formTitle').textContent = `Editing: ${p.name}`;
-            document.getElementById('playerName').focus();
         }
-        
+
         function deletePlayer(id) {
             if (confirm("Are you sure you want to delete this player?")) {
                 fetch(`${baseUrl}/${id}`, { method: 'DELETE' })
-                    .then(resp => {
-                        if (resp.ok) {
-                            showAlert('Player deleted successfully!', 'success');
-                            loadPlayers();
-                        } else {
-                            resp.text().then(msg => showAlert('Error: ' + msg, 'danger'));
-                        }
-                    })
-                    .catch(() => showAlert('Network or server error while deleting.', 'danger'));
+                    .then(() => loadPlayers());
             }
         }
-        </script>
-        </body>
-        </html>
+    </script>
 </body>
 </html>
