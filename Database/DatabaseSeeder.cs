@@ -14,7 +14,7 @@ namespace EspnBackend.Database
 
         public void Seed()
         {
-
+            
         }
 
     }

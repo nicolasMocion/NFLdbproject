@@ -29,10 +29,10 @@ namespace EspnBackend.Data
         {
             // Composite keys
             modelBuilder.Entity<PlayerTeamHistory>()
-                .HasKey(p => new { p.PlayerId, p.TeamId });
+                .HasKey(p => new { p.PlayerId, p.TeamId, p.StartDate });
 
             modelBuilder.Entity<CoachTeamHistory>()
-                .HasKey(c => new { c.CoachId, c.TeamId });
+                .HasKey(c => new { c.CoachId, c.TeamId, c.StartDate });
 
             modelBuilder.Entity<TeamTitle>()
                 .HasKey(tt => new { tt.TeamId, tt.TitleId, tt.YearWon });

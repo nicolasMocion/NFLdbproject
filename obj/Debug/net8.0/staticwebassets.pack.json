@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets/Frontend/public/css/style.css"
     },
     {
+      "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/draft-score-calculator.html",
+      "PackagePath": "staticwebassets/Frontend/public/draft-score-calculator.html"
+    },
+    {
       "Id": "/Users/nicolas/EspnBackend/wwwroot/Frontend/public/edit-cities.html",
       "PackagePath": "staticwebassets/Frontend/public/edit-cities.html"
     },

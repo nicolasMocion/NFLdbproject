@@ -3,10 +3,12 @@ using EspnBackend.DTO;
 using EspnBackend.Data;
 using EspnBackend.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EspnBackend.Controllers
+namespace EspnBackend.Controllerså
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -27,52 +29,16 @@ namespace EspnBackend.Controllers
                 .Include(h => h.Team)
                 .Select(h => new
                 {
-                    PlayerName = h.Player != null ? h.Player.Name : "Unknown",
-                    TeamName = h.Team != null ? h.Team.Name : "Unknown",
-                    h.StartDate,
-                    h.EndDate
+                    playerId = h.PlayerId,
+                    teamId = h.TeamId,
+                    startDate = h.StartDate.ToString("yyyy-MM-dd"),
+                    endDate = h.EndDate != null ? ((DateTime)h.EndDate).ToString("yyyy-MM-dd") : null,
+                    playerName = h.Player != null ? h.Player.Name : "Unknown",
+                    teamName = h.Team != null ? h.Team.Name : "Unknown"
                 })
                 .ToListAsync();
 
             return Ok(history);
-        }
-
-        [HttpPost("dto")]
-        public async Task<ActionResult> Create(PlayerTeamHistoryDTO dto)
-        {
-            var player = await _context.Players.FirstOrDefaultAsync(p => p.Name == dto.PlayerName);
-            var team = await _context.Teams.FirstOrDefaultAsync(t => t.Name == dto.TeamName);
-            if (player == null || team == null) return BadRequest("Player or Team not found");
-
-            var history = new PlayerTeamHistory
-            {
-                PlayerId = player.Id,
-                TeamId = team.Id,
-                StartDate = DateTime.Parse(dto.StartDate),
-                EndDate = string.IsNullOrEmpty(dto.EndDate) ? null : DateTime.Parse(dto.EndDate)
-            };
-
-            _context.PlayerTeamHistory.Add(history);
-            await _context.SaveChangesAsync();
-
-            return Ok();
-        }
-
-        [HttpDelete]
-        public async Task<ActionResult> Delete(string playerName, string teamName)
-        {
-            var player = await _context.Players.FirstOrDefaultAsync(p => p.Name == playerName);
-            var team = await _context.Teams.FirstOrDefaultAsync(t => t.Name == teamName);
-            if (player == null || team == null) return NotFound();
-
-            var history = await _context.PlayerTeamHistory
-                .FirstOrDefaultAsync(pth => pth.PlayerId == player.Id && pth.TeamId == team.Id);
-            if (history == null) return NotFound();
-
-            _context.PlayerTeamHistory.Remove(history);
-            await _context.SaveChangesAsync();
-
-            return Ok();
         }
 
         [HttpGet("dropdown-data")]
@@ -88,5 +54,90 @@ namespace EspnBackend.Controllers
 
             return Ok(new { players, teams });
         }
+
+        [HttpPost("dto")]
+        public async Task<ActionResult> Create(PlayerTeamHistoryDTO dto)
+        {
+            var player = await _context.Players.FirstOrDefaultAsync(p => p.Name == dto.PlayerName);
+            var team = await _context.Teams.FirstOrDefaultAsync(t => t.Name == dto.TeamName);
+            if (player == null || team == null) return BadRequest("Player or Team not found");
+
+            if (!DateTime.TryParse(dto.StartDate, out DateTime startDate))
+                return BadRequest("Invalid StartDate format");
+
+            DateTime? endDate = null;
+            if (!string.IsNullOrEmpty(dto.EndDate))
+            {
+                if (!DateTime.TryParse(dto.EndDate, out DateTime parsedEndDate))
+                    return BadRequest("Invalid EndDate format");
+                endDate = parsedEndDate;
             }
+
+            var history = new PlayerTeamHistory
+            {
+                PlayerId = player.Id,
+                TeamId = team.Id,
+                StartDate = startDate,
+                EndDate = endDate
+            };
+
+            _context.PlayerTeamHistory.Add(history);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPut("dto/{playerId:int}/{teamId:int}/{startDate}")]
+        public async Task<ActionResult> UpdatePlayerTeamHistory(int playerId, int teamId, string startDate, PlayerTeamHistoryDTO dto)
+        {
+            if (!DateTime.TryParse(startDate, out DateTime parsedStartDate))
+                return BadRequest("Invalid StartDate in URL");
+
+            var history = await _context.PlayerTeamHistory
+                .FirstOrDefaultAsync(h => h.PlayerId == playerId && h.TeamId == teamId && h.StartDate == parsedStartDate);
+            if (history == null) return NotFound();
+
+            var player = await _context.Players.FirstOrDefaultAsync(p => p.Name == dto.PlayerName);
+            if (player == null) return BadRequest("Player not found");
+
+            var team = await _context.Teams.FirstOrDefaultAsync(t => t.Name == dto.TeamName);
+            if (team == null) return BadRequest("Team not found");
+
+            if (!DateTime.TryParse(dto.StartDate, out DateTime newStartDate))
+                return BadRequest("Invalid StartDate format in body");
+
+            DateTime? endDate = null;
+            if (!string.IsNullOrEmpty(dto.EndDate))
+            {
+                if (!DateTime.TryParse(dto.EndDate, out DateTime parsedEndDate))
+                    return BadRequest("Invalid EndDate format");
+                endDate = parsedEndDate;
+            }
+
+            // If you allow changing the PK, you should delete and re-add (or warn)
+            history.PlayerId = player.Id;
+            history.TeamId = team.Id;
+            history.StartDate = newStartDate;
+            history.EndDate = endDate;
+
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+
+        [HttpDelete("{playerId:int}/{teamId:int}/{startDate}")]
+        public async Task<ActionResult> Delete(int playerId, int teamId, string startDate)
+        {
+            if (!DateTime.TryParse(startDate, out DateTime parsedStartDate))
+                return BadRequest("Invalid StartDate in URL");
+
+            var history = await _context.PlayerTeamHistory
+                .FirstOrDefaultAsync(h => h.PlayerId == playerId && h.TeamId == teamId && h.StartDate == parsedStartDate);
+            if (history == null) return NotFound();
+
+            _context.PlayerTeamHistory.Remove(history);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+    }
 }

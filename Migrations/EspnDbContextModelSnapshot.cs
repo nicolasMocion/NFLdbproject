@@ -80,13 +80,13 @@ namespace EspnBackend.Migrations
                     b.Property<int>("TeamId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
 
-                    b.HasKey("CoachId", "TeamId");
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("CoachId", "TeamId", "StartDate");
 
                     b.HasIndex("TeamId");
 
@@ -170,9 +170,6 @@ namespace EspnBackend.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Number")
-                        .HasColumnType("int");
-
                     b.Property<string>("Position")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -226,13 +223,13 @@ namespace EspnBackend.Migrations
                     b.Property<int>("TeamId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
 
-                    b.HasKey("PlayerId", "TeamId");
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("PlayerId", "TeamId", "StartDate");
 
                     b.HasIndex("TeamId");
 

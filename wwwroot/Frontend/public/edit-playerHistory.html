@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <head>
-            <meta charset="utf-8">
-            <title>Misia Juaca</title>
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-            <meta content="" name="keywords">
-            <meta content="" name="description">
-        
-            <!-- Favicon -->
-            <link href="img/favicon.ico" rel="icon">
-        
-            <!-- Google Web Fonts -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
-        
-            <!-- Icon Font Stylesheet -->
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-        
-            <!-- Libraries Stylesheet -->
-            <link href="lib/animate/animate.min.css" rel="stylesheet">
-            <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        
-            <!-- Customized Bootstrap Stylesheet -->
-            <link href="css/bootstrap.min.css" rel="stylesheet">
-        
-            <!-- Template Stylesheet -->
-            <link href="css/style.css" rel="stylesheet">
-        </head>
-        <title>Edit Games - NFL Admin</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>NFL Admin - Player Team History</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 <body>
-    <!-- Navbar (same as your existing one) -->
-
-   <!-- Navbar Start -->
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
         <h1 class="text-primary m-0">NFL HERO</h1>
@@ -53,11 +36,10 @@
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
             </div>
         </div>
-        </div>
     </div>
 </nav>
 <!-- Navbar End -->
-    
+
 <div class="container py-5 mt-5">
     <div class="card shadow p-4 form-container">
         <h3 class="text-primary mb-4">Manage Player-Team History</h3>
@@ -83,6 +65,10 @@
 
         <h4 class="mb-3">Add/Edit History</h4>
         <form id="historyForm">
+            <!-- Hidden composite PK fields -->
+            <input type="hidden" id="originalPlayerId">
+            <input type="hidden" id="originalTeamId">
+            <input type="hidden" id="originalStartDate">
             <div class="row g-3">
                 <div class="col-md-6">
                     <label for="playerSelect" class="form-label">Player</label>
@@ -123,88 +109,122 @@
         document.getElementById('historyForm').addEventListener('submit', saveHistory);
         document.getElementById('resetForm').addEventListener('click', () => {
             document.getElementById('historyForm').reset();
-            document.getElementById('historyId')?.remove(); // reset hidden id
+            document.getElementById('originalPlayerId').value = '';
+            document.getElementById('originalTeamId').value = '';
+            document.getElementById('originalStartDate').value = '';
         });
     });
 
     function loadDropdownData() {
-    fetch(`${baseUrl}/dropdown-data`)
-        .then(res => res.json())
-        .then(data => {
-            const playerSelect = document.getElementById('playerSelect');
-            const teamSelect = document.getElementById('teamSelect');
+        fetch(`${baseUrl}/dropdown-data`)
+            .then(res => res.json())
+            .then(data => {
+                const playerSelect = document.getElementById('playerSelect');
+                const teamSelect = document.getElementById('teamSelect');
 
-            data.players.forEach(player => {
-                const option = document.createElement('option');
-                option.value = player.name;
-                option.textContent = player.name;
-                playerSelect.appendChild(option);
-            });
+                playerSelect.innerHTML = '<option value="">Select Player</option>';
+                teamSelect.innerHTML = '<option value="">Select Team</option>';
 
-            data.teams.forEach(team => {
-                const option = document.createElement('option');
-                option.value = team.name;
-                option.textContent = team.name;
-                teamSelect.appendChild(option);
+                data.players.forEach(player => {
+                    const option = document.createElement('option');
+                    option.value = player.id;
+                    option.textContent = player.name;
+                    playerSelect.appendChild(option);
+                });
+
+                data.teams.forEach(team => {
+                    const option = document.createElement('option');
+                    option.value = team.id;
+                    option.textContent = team.name;
+                    teamSelect.appendChild(option);
+                });
             });
-        });
-}
+    }
 
     function loadHistory() {
         fetch(`${baseUrl}/all`)
             .then(res => res.json())
             .then(histories => {
                 const tbody = document.getElementById('historyTableBody');
+                if (!histories.length) {
+                    tbody.innerHTML = `<tr><td colspan="5" class="text-center">No records found.</td></tr>`;
+                    return;
+                }
                 tbody.innerHTML = histories.map(h => `
                     <tr>
                         <td>${h.playerName}</td>
                         <td>${h.teamName}</td>
                         <td>${h.startDate}</td>
-                        <td>${h.endDate}</td>
+                        <td>${h.endDate || 'Present'}</td>
                         <td>
                             <button class="btn btn-warning btn-sm me-1" onclick='editHistory(${JSON.stringify(h)})'>Edit</button>
-                            <button class="btn btn-danger btn-sm" onclick="deleteHistory('${h.playerName}', '${h.teamName}')">Delete</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteHistory('${h.playerId}','${h.teamId}','${encodeURIComponent(h.startDate)}')">Delete</button>
                         </td>
                     </tr>
                 `).join('');
             });
     }
 
-
     function saveHistory(event) {
         event.preventDefault();
+
+        const originalPlayerId = document.getElementById('originalPlayerId').value;
+        const originalTeamId = document.getElementById('originalTeamId').value;
+        const originalStartDate = document.getElementById('originalStartDate').value;
+
+        // Get selected option text for playerName and teamName
+        const playerSelect = document.getElementById('playerSelect');
+        const teamSelect = document.getElementById('teamSelect');
+        const playerName = playerSelect.options[playerSelect.selectedIndex].text;
+        const teamName = teamSelect.options[teamSelect.selectedIndex].text;
+
         const dto = {
-            playerName: document.getElementById('playerSelect').value,
-            teamName: document.getElementById('teamSelect').value,
+            playerName: playerName,
+            teamName: teamName,
             startDate: document.getElementById('startDate').value,
-            endDate: document.getElementById('endDate').value
+            endDate: document.getElementById('endDate').value || null
         };
 
-        fetch(`${baseUrl}/dto`, {
-            method: 'POST',
+        let method, url;
+        if (originalPlayerId && originalTeamId && originalStartDate) {
+            method = 'PUT';
+            url = `${baseUrl}/dto/${originalPlayerId}/${originalTeamId}/${encodeURIComponent(originalStartDate)}`;
+        } else {
+            method = 'POST';
+            url = `${baseUrl}/dto`;
+        }
+
+        fetch(url, {
+            method,
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dto)
         }).then(() => {
             loadHistory();
             document.getElementById('historyForm').reset();
+            document.getElementById('originalPlayerId').value = '';
+            document.getElementById('originalTeamId').value = '';
+            document.getElementById('originalStartDate').value = '';
         });
     }
 
     function editHistory(h) {
-    document.getElementById('playerSelect').value = h.playerId;
-    document.getElementById('teamSelect').value = h.teamId;
-    document.getElementById('startDate').value = h.startDate.substring(0, 10);
-document.getElementById('endDate').value = h.endDate.substring(0, 10);
-}
+        document.getElementById('playerSelect').value = h.playerId;
+        document.getElementById('teamSelect').value = h.teamId;
+        document.getElementById('startDate').value = h.startDate ? h.startDate.substring(0, 10) : '';
+        document.getElementById('endDate').value = h.endDate ? h.endDate.substring(0, 10) : '';
 
-    function deleteHistory(playerName, teamName) {
+        // Store composite PK for later PUT
+        document.getElementById('originalPlayerId').value = h.playerId;
+        document.getElementById('originalTeamId').value = h.teamId;
+        document.getElementById('originalStartDate').value = h.startDate;
+    }
+
+    function deleteHistory(playerId, teamId, startDate) {
         if (confirm("Are you sure you want to delete this history entry?")) {
-            fetch(`${baseUrl}?playerName=${encodeURIComponent(playerName)}&teamName=${encodeURIComponent(teamName)}`, {
-                method: 'DELETE'
-            }).then(() => loadHistory());
+            fetch(`${baseUrl}/${playerId}/${teamId}/${startDate}`, { method: 'DELETE' })
+                .then(() => loadHistory());
         }
     }
 </script>
-           
 </body>
 </html>

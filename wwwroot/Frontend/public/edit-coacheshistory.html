@@ -78,7 +78,10 @@
 
             <h4 class="mb-3">Add/Edit Record</h4>
             <form id="historyForm">
-                <input type="hidden" id="historyId">
+                <!-- Hidden composite PK fields -->
+                <input type="hidden" id="originalCoachId">
+                <input type="hidden" id="originalTeamId">
+                <input type="hidden" id="originalStartDate">
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label for="coachName" class="form-label">Coach</label>
@@ -115,7 +118,9 @@
             document.getElementById('historyForm').addEventListener('submit', saveHistory);
             document.getElementById('resetForm').addEventListener('click', () => {
                 document.getElementById('historyForm').reset();
-                document.getElementById('historyId').value = '';
+                document.getElementById('originalCoachId').value = '';
+                document.getElementById('originalTeamId').value = '';
+                document.getElementById('originalStartDate').value = '';
             });
         });
 
@@ -124,6 +129,10 @@
                 .then(res => res.json())
                 .then(histories => {
                     const tbody = document.getElementById('historyTableBody');
+                    if (!histories.length) {
+                        tbody.innerHTML = `<tr><td colspan="5" class="text-center">No records found.</td></tr>`;
+                        return;
+                    }
                     tbody.innerHTML = histories.map(h => `
                         <tr>
                             <td>${h.coachName}</td>
@@ -132,7 +141,7 @@
                             <td>${h.endDate || 'Present'}</td>
                             <td>
                                 <button class="btn btn-warning btn-sm me-1" onclick='editHistory(${JSON.stringify(h)})'>Edit</button>
-                                <button class="btn btn-danger btn-sm" onclick="deleteHistory(${h.id})">Delete</button>
+                                <button class="btn btn-danger btn-sm" onclick="deleteHistory('${h.coachId}','${h.teamId}','${encodeURIComponent(h.startDate)}')">Delete</button>
                             </td>
                         </tr>
                     `).join('');
@@ -153,7 +162,11 @@
 
         function saveHistory(event) {
             event.preventDefault();
-            const id = document.getElementById('historyId').value;
+
+            const originalCoachId = document.getElementById('originalCoachId').value;
+            const originalTeamId = document.getElementById('originalTeamId').value;
+            const originalStartDate = document.getElementById('originalStartDate').value;
+
             const dto = {
                 coachName: document.getElementById('coachName').value,
                 teamName: document.getElementById('teamName').value,
@@ -161,8 +174,14 @@
                 endDate: document.getElementById('endDate').value || null
             };
 
-            const method = id ? 'PUT' : 'POST';
-            const url = id ? `${baseUrl}/dto/${id}` : `${baseUrl}/dto`;
+            let method, url;
+            if (originalCoachId && originalTeamId && originalStartDate) {
+                method = 'PUT';
+                url = `${baseUrl}/dto/${originalCoachId}/${originalTeamId}/${encodeURIComponent(originalStartDate)}`;
+            } else {
+                method = 'POST';
+                url = `${baseUrl}/dto`;
+            }
 
             fetch(url, {
                 method,
@@ -171,7 +190,9 @@
             }).then(() => {
                 loadHistory();
                 document.getElementById('historyForm').reset();
-                document.getElementById('historyId').value = '';
+                document.getElementById('originalCoachId').value = '';
+                document.getElementById('originalTeamId').value = '';
+                document.getElementById('originalStartDate').value = '';
             });
         }
 
@@ -180,11 +201,16 @@
             document.getElementById('teamName').value = h.teamName;
             document.getElementById('startDate').value = h.startDate;
             document.getElementById('endDate').value = h.endDate || '';
+
+            // Store composite PK for later PUT
+            document.getElementById('originalCoachId').value = h.coachId;
+            document.getElementById('originalTeamId').value = h.teamId;
+            document.getElementById('originalStartDate').value = h.startDate;
         }
 
-        function deleteHistory(id) {
+        function deleteHistory(coachId, teamId, startDate) {
             if (confirm("Are you sure you want to delete this record?")) {
-                fetch(`${baseUrl}/${id}`, { method: 'DELETE' })
+                fetch(`${baseUrl}/${coachId}/${teamId}/${startDate}`, { method: 'DELETE' })
                     .then(() => loadHistory());
             }
         }

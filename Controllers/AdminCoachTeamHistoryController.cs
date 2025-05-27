@@ -23,22 +23,24 @@ namespace EspnBackend.Controllers
         #region GET
 
         [HttpGet("all")]
-        public async Task<ActionResult<IEnumerable<object>>> GetAllCoachTeamHistories()
+public async Task<ActionResult<IEnumerable<object>>> GetAllCoachTeamHistories()
+{
+    var histories = await _context.CoachTeamHistory
+        .Include(h => h.Coach)
+        .Include(h => h.Team)
+        .Select(h => new
         {
-            var histories = await _context.CoachTeamHistory
-                .Include(h => h.Coach)
-                .Include(h => h.Team)
-                .Select(h => new
-                {
-                    CoachName = h.Coach.Name,
-                    TeamName = h.Team.Name,
-                    h.StartDate,
-                    h.EndDate
-                })
-                .ToListAsync();
+            coachId = h.CoachId,
+            teamId = h.TeamId,
+            startDate = h.StartDate.ToString("yyyy-MM-dd"),
+            endDate = h.EndDate != null ? ((DateTime)h.EndDate).ToString("yyyy-MM-dd") : null,
+            coachName = h.Coach.Name,
+            teamName = h.Team.Name
+        })
+        .ToListAsync();
 
-            return Ok(histories);
-        }
+    return Ok(histories);
+}
 
         [HttpGet("dropdown-data")]
         public async Task<ActionResult> GetDropdownData()
@@ -96,53 +98,61 @@ namespace EspnBackend.Controllers
 
         #region PUT
 
-        [HttpPut("dto/{id}")]
-        public async Task<ActionResult> UpdateCoachTeamHistory(int id, CoachTeamHistoryDTO dto)
-        {
-            var history = await _context.CoachTeamHistory.FindAsync(id);
-            if (history == null) return NotFound();
+        [HttpPut("dto/{coachId:int}/{teamId:int}/{startDate}")]
+public async Task<ActionResult> UpdateCoachTeamHistory(int coachId, int teamId, string startDate, CoachTeamHistoryDTO dto)
+{
+    if (!DateTime.TryParse(startDate, out DateTime parsedStartDate))
+        return BadRequest("Invalid StartDate in URL");
 
-            var coach = await _context.Coaches.FirstOrDefaultAsync(c => c.Name == dto.CoachName);
-            if (coach == null) return BadRequest("Coach not found");
+    var history = await _context.CoachTeamHistory
+        .FirstOrDefaultAsync(h => h.CoachId == coachId && h.TeamId == teamId && h.StartDate == parsedStartDate);
+    if (history == null) return NotFound();
 
-            var team = await _context.Teams.FirstOrDefaultAsync(t => t.Name == dto.TeamName);
-            if (team == null) return BadRequest("Team not found");
+    var coach = await _context.Coaches.FirstOrDefaultAsync(c => c.Name == dto.CoachName);
+    if (coach == null) return BadRequest("Coach not found");
 
-            if (!DateTime.TryParse(dto.StartDate, out DateTime startDate))
-                return BadRequest("Invalid StartDate format");
+    var team = await _context.Teams.FirstOrDefaultAsync(t => t.Name == dto.TeamName);
+    if (team == null) return BadRequest("Team not found");
 
-            DateTime? endDate = null;
-            if (!string.IsNullOrEmpty(dto.EndDate))
-            {
-                if (!DateTime.TryParse(dto.EndDate, out DateTime parsedEndDate))
-                    return BadRequest("Invalid EndDate format");
-                endDate = parsedEndDate;
-            }
+    if (!DateTime.TryParse(dto.StartDate, out DateTime newStartDate))
+        return BadRequest("Invalid StartDate format in body");
 
-            history.CoachId = coach.Id;
-            history.TeamId = team.Id;
-            history.StartDate = startDate;
-            history.EndDate = endDate;
+    DateTime? endDate = null;
+    if (!string.IsNullOrEmpty(dto.EndDate))
+    {
+        if (!DateTime.TryParse(dto.EndDate, out DateTime parsedEndDate))
+            return BadRequest("Invalid EndDate format");
+        endDate = parsedEndDate;
+    }
 
-            await _context.SaveChangesAsync();
-            return Ok();
-        }
+    // If you allow changing the PK, you should delete and re-add (or warn)
+    history.CoachId = coach.Id;
+    history.TeamId = team.Id;
+    history.StartDate = newStartDate;
+    history.EndDate = endDate;
 
+    await _context.SaveChangesAsync();
+    return Ok();
+}
         #endregion
 
         #region DELETE
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteCoachTeamHistory(int id)
-        {
-            var history = await _context.CoachTeamHistory.FindAsync(id);
-            if (history == null) return NotFound();
+        [HttpDelete("{coachId:int}/{teamId:int}/{startDate}")]
+public async Task<ActionResult> DeleteCoachTeamHistory(int coachId, int teamId, string startDate)
+{
+    if (!DateTime.TryParse(startDate, out DateTime parsedStartDate))
+        return BadRequest("Invalid StartDate in URL");
 
-            _context.CoachTeamHistory.Remove(history);
-            await _context.SaveChangesAsync();
+    var history = await _context.CoachTeamHistory
+        .FirstOrDefaultAsync(h => h.CoachId == coachId && h.TeamId == teamId && h.StartDate == parsedStartDate);
+    if (history == null) return NotFound();
 
-            return Ok();
-        }
+    _context.CoachTeamHistory.Remove(history);
+    await _context.SaveChangesAsync();
+
+    return Ok();
+}
 
         #endregion
     }

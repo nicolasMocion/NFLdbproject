@@ -7,12 +7,29 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace EspnBackend.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterDatabase()
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "AdminUsers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Username = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    PasswordHash = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AdminUsers", x => x.Id);
+                })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
@@ -108,32 +125,6 @@ namespace EspnBackend.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "NFLGames",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    GameDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    HomeTeam = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    AwayTeam = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    HomeScore = table.Column<int>(type: "int", nullable: false),
-                    AwayScore = table.Column<int>(type: "int", nullable: false),
-                    SeasonId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_NFLGames", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_NFLGames_Seasons_SeasonId",
-                        column: x => x.SeasonId,
-                        principalTable: "Seasons",
-                        principalColumn: "Id");
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
                 name: "Teams",
                 columns: table => new
                 {
@@ -189,6 +180,43 @@ namespace EspnBackend.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
+                name: "NFLGames",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    GameDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    HomeTeamId = table.Column<int>(type: "int", nullable: false),
+                    AwayTeamId = table.Column<int>(type: "int", nullable: false),
+                    HomeScore = table.Column<int>(type: "int", nullable: false),
+                    AwayScore = table.Column<int>(type: "int", nullable: false),
+                    SeasonId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_NFLGames", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_NFLGames_Seasons_SeasonId",
+                        column: x => x.SeasonId,
+                        principalTable: "Seasons",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_NFLGames_Teams_AwayTeamId",
+                        column: x => x.AwayTeamId,
+                        principalTable: "Teams",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_NFLGames_Teams_HomeTeamId",
+                        column: x => x.HomeTeamId,
+                        principalTable: "Teams",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
                 name: "Players",
                 columns: table => new
                 {
@@ -198,7 +226,6 @@ namespace EspnBackend.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Position = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Number = table.Column<int>(type: "int", nullable: false),
                     CollegeId = table.Column<int>(type: "int", nullable: false),
                     TeamId = table.Column<int>(type: "int", nullable: false),
                     HomeTownCityId = table.Column<int>(type: "int", nullable: false)
@@ -237,7 +264,7 @@ namespace EspnBackend.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TeamTitles", x => new { x.TeamId, x.TitleId });
+                    table.PrimaryKey("PK_TeamTitles", x => new { x.TeamId, x.TitleId, x.YearWon });
                     table.ForeignKey(
                         name: "FK_TeamTitles_Teams_TeamId",
                         column: x => x.TeamId,
@@ -264,7 +291,7 @@ namespace EspnBackend.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CoachTeamHistory", x => new { x.CoachId, x.TeamId });
+                    table.PrimaryKey("PK_CoachTeamHistory", x => new { x.CoachId, x.TeamId, x.StartDate });
                     table.ForeignKey(
                         name: "FK_CoachTeamHistory_Coaches_CoachId",
                         column: x => x.CoachId,
@@ -304,7 +331,7 @@ namespace EspnBackend.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "PlayerTeamHistories",
+                name: "PlayerTeamHistory",
                 columns: table => new
                 {
                     PlayerId = table.Column<int>(type: "int", nullable: false),
@@ -314,15 +341,15 @@ namespace EspnBackend.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PlayerTeamHistories", x => new { x.PlayerId, x.TeamId });
+                    table.PrimaryKey("PK_PlayerTeamHistory", x => new { x.PlayerId, x.TeamId, x.StartDate });
                     table.ForeignKey(
-                        name: "FK_PlayerTeamHistories_Players_PlayerId",
+                        name: "FK_PlayerTeamHistory_Players_PlayerId",
                         column: x => x.PlayerId,
                         principalTable: "Players",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PlayerTeamHistories_Teams_TeamId",
+                        name: "FK_PlayerTeamHistory_Teams_TeamId",
                         column: x => x.TeamId,
                         principalTable: "Teams",
                         principalColumn: "Id",
@@ -344,6 +371,16 @@ namespace EspnBackend.Migrations
                 name: "IX_Colleges_CityId",
                 table: "Colleges",
                 column: "CityId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_NFLGames_AwayTeamId",
+                table: "NFLGames",
+                column: "AwayTeamId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_NFLGames_HomeTeamId",
+                table: "NFLGames",
+                column: "HomeTeamId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_NFLGames_SeasonId",
@@ -371,8 +408,8 @@ namespace EspnBackend.Migrations
                 column: "PlayerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PlayerTeamHistories_TeamId",
-                table: "PlayerTeamHistories",
+                name: "IX_PlayerTeamHistory_TeamId",
+                table: "PlayerTeamHistory",
                 column: "TeamId");
 
             migrationBuilder.CreateIndex(
@@ -400,6 +437,9 @@ namespace EspnBackend.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "AdminUsers");
+
+            migrationBuilder.DropTable(
                 name: "CoachTeamHistory");
 
             migrationBuilder.DropTable(
@@ -409,7 +449,7 @@ namespace EspnBackend.Migrations
                 name: "PlayerStats");
 
             migrationBuilder.DropTable(
-                name: "PlayerTeamHistories");
+                name: "PlayerTeamHistory");
 
             migrationBuilder.DropTable(
                 name: "TeamTitles");

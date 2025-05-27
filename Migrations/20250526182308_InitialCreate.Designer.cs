@@ -3,6 +3,7 @@ using System;
 using EspnBackend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
@@ -11,22 +12,26 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EspnBackend.Migrations
 {
     [DbContext(typeof(EspnDbContext))]
-    [Migration("20250514063447_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250526182308_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0")
+                .HasAnnotation("ProductVersion", "8.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
             modelBuilder.Entity("EspnBackend.Models.City", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -45,6 +50,8 @@ namespace EspnBackend.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -76,13 +83,13 @@ namespace EspnBackend.Migrations
                     b.Property<int>("TeamId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
 
-                    b.HasKey("CoachId", "TeamId");
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("CoachId", "TeamId", "StartDate");
 
                     b.HasIndex("TeamId");
 
@@ -94,6 +101,8 @@ namespace EspnBackend.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CityId")
                         .HasColumnType("int");
@@ -115,12 +124,13 @@ namespace EspnBackend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<int>("AwayScore")
                         .HasColumnType("int");
 
-                    b.Property<string>("AwayTeam")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("AwayTeamId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("GameDate")
                         .HasColumnType("datetime(6)");
@@ -128,14 +138,17 @@ namespace EspnBackend.Migrations
                     b.Property<int>("HomeScore")
                         .HasColumnType("int");
 
-                    b.Property<string>("HomeTeam")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("HomeTeamId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("SeasonId")
+                    b.Property<int>("SeasonId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AwayTeamId");
+
+                    b.HasIndex("HomeTeamId");
 
                     b.HasIndex("SeasonId");
 
@@ -148,6 +161,8 @@ namespace EspnBackend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<int>("CollegeId")
                         .HasColumnType("int");
 
@@ -157,9 +172,6 @@ namespace EspnBackend.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
-
-                    b.Property<int>("Number")
-                        .HasColumnType("int");
 
                     b.Property<string>("Position")
                         .IsRequired()
@@ -184,6 +196,8 @@ namespace EspnBackend.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Interceptions")
                         .HasColumnType("int");
@@ -212,17 +226,17 @@ namespace EspnBackend.Migrations
                     b.Property<int>("TeamId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("EndDate")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
 
-                    b.HasKey("PlayerId", "TeamId");
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("PlayerId", "TeamId", "StartDate");
 
                     b.HasIndex("TeamId");
 
-                    b.ToTable("PlayerTeamHistories");
+                    b.ToTable("PlayerTeamHistory");
                 });
 
             modelBuilder.Entity("EspnBackend.Models.Season", b =>
@@ -230,6 +244,8 @@ namespace EspnBackend.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Year")
                         .HasColumnType("int");
@@ -244,6 +260,8 @@ namespace EspnBackend.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Capacity")
                         .HasColumnType("int");
@@ -267,6 +285,8 @@ namespace EspnBackend.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("CityId")
                         .HasColumnType("int");
@@ -298,7 +318,7 @@ namespace EspnBackend.Migrations
                     b.Property<int>("YearWon")
                         .HasColumnType("int");
 
-                    b.HasKey("TeamId", "TitleId");
+                    b.HasKey("TeamId", "TitleId", "YearWon");
 
                     b.HasIndex("TitleId");
 
@@ -311,6 +331,8 @@ namespace EspnBackend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -322,6 +344,79 @@ namespace EspnBackend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Titles");
+                });
+
+            modelBuilder.Entity("EspnBackend.Security.AdminUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AdminUsers");
+                });
+
+            modelBuilder.Entity("EspnBackend.Security.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("EspnBackend.Security.UserLoginHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("LoginTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserLoginHistory", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
                 });
 
             modelBuilder.Entity("EspnBackend.Models.Coach", b =>
@@ -367,9 +462,29 @@ namespace EspnBackend.Migrations
 
             modelBuilder.Entity("EspnBackend.Models.NFLGame", b =>
                 {
-                    b.HasOne("EspnBackend.Models.Season", null)
+                    b.HasOne("EspnBackend.Models.Team", "AwayTeam")
+                        .WithMany()
+                        .HasForeignKey("AwayTeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EspnBackend.Models.Team", "HomeTeam")
+                        .WithMany()
+                        .HasForeignKey("HomeTeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EspnBackend.Models.Season", "Season")
                         .WithMany("Games")
-                        .HasForeignKey("SeasonId");
+                        .HasForeignKey("SeasonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AwayTeam");
+
+                    b.Navigation("HomeTeam");
+
+                    b.Navigation("Season");
                 });
 
             modelBuilder.Entity("EspnBackend.Models.Player", b =>
@@ -476,6 +591,17 @@ namespace EspnBackend.Migrations
                     b.Navigation("Team");
 
                     b.Navigation("Title");
+                });
+
+            modelBuilder.Entity("EspnBackend.Security.UserLoginHistory", b =>
+                {
+                    b.HasOne("EspnBackend.Security.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EspnBackend.Models.City", b =>
