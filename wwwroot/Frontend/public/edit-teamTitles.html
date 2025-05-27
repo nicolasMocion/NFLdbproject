@@ -184,12 +184,21 @@
         
 
         function deleteTeamTitle(teamName, titleName) {
-            if (confirm(`Are you sure you want to delete ${teamName}'s ${titleName}?`)) {
-                // Note: This is simplified - in a real app you'd need the IDs
-                fetch(`${baseUrl}/${teamName}/${titleName}`, { method: 'DELETE' })
-                    .then(() => loadTeamTitles());
-            }
-        }
+    if (confirm(`Are you sure you want to delete ${teamName}'s ${titleName}?`)) {
+        // Lookup IDs first
+        fetch(`${baseUrl}/get-ids?teamName=${encodeURIComponent(teamName)}&titleName=${encodeURIComponent(titleName)}`)
+            .then(res => {
+                if (!res.ok) throw new Error('Could not get IDs');
+                return res.json();
+            })
+            .then(ids => {
+                // Now call DELETE with IDs
+                return fetch(`${baseUrl}/${ids.teamId}/${ids.titleId}`, { method: 'DELETE' });
+            })
+            .then(() => loadTeamTitles())
+            .catch(err => alert('Failed to delete: ' + err.message));
+    }
+}
 
         function resetForm() {
             document.getElementById('teamTitleForm').reset();
